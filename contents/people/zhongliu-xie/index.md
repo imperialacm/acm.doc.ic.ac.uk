@@ -4,7 +4,7 @@ position: Membership Chair
 order: 5
 email: cloud.arkadia@gmail.com
 photo: /img/people/zhongliu.jpg
-template: profile.jade
+template: person.jade
 ---
 Zhongliu is a second year PhD student working on visual
 information processing and pattern recognition, in particular he

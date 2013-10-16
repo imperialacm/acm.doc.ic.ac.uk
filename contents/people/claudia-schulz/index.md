@@ -4,7 +4,7 @@ position: Treasurer
 order: 3
 email: claudia.schulz@imperial.ac.uk
 photo: /img/people/claudia.jpg
-template: profile.jade
+template: person.jade
 ---
 Claudia is a second year PhD student working in the field of knowledge
 representation and reasoning, where her particular focus is on

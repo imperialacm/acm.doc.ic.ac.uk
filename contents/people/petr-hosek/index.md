@@ -4,7 +4,7 @@ position: Chair
 order: 1
 email: p.hosek@imperial.ac.uk
 photo: /img/people/petr.jpg
-template: profile.jade
+template: person.jade
 ---
 Petr is a doctoral student in the Department of Computing at Imperial
 College London, where he works in the Software Reliability Group

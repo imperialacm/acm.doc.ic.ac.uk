@@ -4,7 +4,7 @@ position: Vice Chair
 order: 2
 email: nickng@doc.ic.ac.uk
 photo: /img/people/nick.jpg
-template: profile.jade
+template: person.jade
 ---
 Nicholas is a final year PhD student working on applying the theory of
 Session Types to guaranteeing safety and correctness of communication

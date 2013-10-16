@@ -4,7 +4,7 @@ position: Webmaster
 order: 6
 email: r.neykova@imperial.ac.uk
 photo: /img/people/rumi.jpg
-template: profile.jade
+template: person.jade
 ---
 Rumyana Neykova is a second year PH.D student at Imperial College
 London, under the supervision of Prof. Nobuko Yoshida. She holds a
