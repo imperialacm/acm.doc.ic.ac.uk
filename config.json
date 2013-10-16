@@ -1,0 +1,24 @@
+{
+  "locals": {
+    "url": "http://acm.doc.ic.ac.uk",
+    "name": "Imperial College London ACM Student Chapter",
+    "owner": "Imperial College London ACM Student Chapter",
+    "description": "Imperial College London ACM Student Chapter"
+  },
+  "plugins": [
+    "wintersmith-browserify",
+    "wintersmith-less"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  }
+}

@@ -1,0 +1,41 @@
+extends layout
+
+block prepend title
+  | #{page.title} -
+
+block content
+  - var seminars = _.chain(contents.seminars._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().groupBy(function(item) {
+  -   return item.date.getFullYear()
+  - }).value()
+  - var years = _.chain(seminars).keys().reverse().value()
+
+  .page-header
+    h1 Seminars
+    p.lead
+      | Student seminars present a great opportunity to learn about
+      | each other's research, to share and discuss new ideas
+  .row
+    .col-lg-8
+      each year in years
+        h2(id='#{year}')= year
+        ul.event-list.list-unstyled
+          each seminar in _.sortBy(seminars[year], function(item) { return -item.date })
+            li
+              h4.event-title
+                a(href=seminar.url)= seminar.title
+                | 
+                span.text-muted= seminar.metadata.author
+              p
+                = moment(seminar.metadata.date).format('dddd, MMMM Do, YYYY, h:mm a')
+                |  in 
+                = seminar.metadata.room
+              !{ typogr(seminar.html).typogrify() } 
+    .col-lg-4
+      !{ typogr(page.html).typogrify() }
+      .site-sidebar.affix
+        h4 Archive
+        ul.nav.archive.site-sidenav
+          each year in years
+            li: a(href='##{year}')= year

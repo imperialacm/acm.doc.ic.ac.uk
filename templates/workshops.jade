@@ -1,0 +1,23 @@
+extends layout
+
+block prepend title
+  | #{page.title} - 
+
+block content
+  - var workshops = _.chain(contents.workshops._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().sortBy(function(item) {
+  -   return item.metadata.date
+  - }).value()
+
+  .page-header
+    h1= page.title
+    p.lead Student workshop driven by the "organised by students for students" ethos.
+
+  .row
+    section(role='main')
+      each workshop in workshops
+        h2= workshop.title
+        !{ workshop.html }
+    aside(role='complementary')
+      !{ page.html }

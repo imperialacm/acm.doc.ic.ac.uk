@@ -1,0 +1,4 @@
+mixin menu(title, path)
+  //li(class=active == title ? 'active' : '')
+  li(class=page.url == path ? 'active' : '')
+    a(href=path)= title

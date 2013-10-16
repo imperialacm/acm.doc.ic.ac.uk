@@ -1,0 +1,14 @@
+---
+name: Nicholas Ng
+position: Vice Chair
+order: 2
+email: nickng@doc.ic.ac.uk
+photo: /img/people/nick.jpg
+template: profile.jade
+---
+Nicholas is a final year PhD student working on applying the theory of
+Session Types to guaranteeing safety and correctness of communication
+aspects of parallel programming. Previously he was the student
+representative for Faculty of Engineering in the Graduate Students'
+Union and a PhD student rep for the Department of Computing. He enjoys
+free food and spending time with computers. He is a Facebook addict.

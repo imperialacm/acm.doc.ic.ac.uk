@@ -1,0 +1,30 @@
+extends layout
+
+block prepend title
+  | #{page.title} - 
+
+block content
+  - var people = _.chain(contents.people._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().sortBy(function(item) {
+  -   return item.metadata.order
+  - }).value()
+
+  .page-header
+    h1 What is ACM?
+    p.lead
+      | Imperial College London ACM Student Chapter has been
+      | established as the first active ACM chapter in United Kingdom.
+  .row
+    section(role='main')
+      each person in people
+        .media
+          a.pull-left(href='#')
+            img.img-circle.media-object(src=person.metadata.photo, width=80)
+          .media-body
+            h4.media-heading= person.metadata.name
+              | 
+              span.text-muted= person.metadata.position
+            !{ person.html }
+    aside(role='complementary')
+      !{ page.html }

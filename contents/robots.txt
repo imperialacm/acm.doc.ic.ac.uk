@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://srg.doc.ic.ac.uk/sitemap.xml

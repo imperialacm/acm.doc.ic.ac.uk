@@ -1,0 +1,27 @@
+extends layout
+
+block prepend title
+  | #{page.title} -
+
+block content
+  - var seminars = _.chain(contents.seminars._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().sortBy(function(item) {
+  -   return item.title
+  - }).value()
+
+  .page-header
+    h1 Seminar
+  .row
+    section(role='main')
+      h3= page.title
+      div!= page.html
+    aside(role='complementary')
+      .panel.panel-default
+        .panel-body
+          h4 Speaker
+          p= page.metadata.author
+          h4 Date
+          p= moment(page.metadata.date).format('dddd, MMMM Do, YYYY, h:mm a')
+          h4 Room
+          p= page.metadata.room

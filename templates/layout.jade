@@ -1,0 +1,88 @@
+!!! 5
+block vars
+  - var bodyclass = null;
+html(lang='en')
+  head
+    block head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(name='description', content=locals.description)
+      meta(name='author', content=locals.owner)
+      title
+        block title
+          = locals.name
+      link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
+      link(rel='stylesheet', href='/css/bootstrap.min.css')
+      link(rel='stylesheet', href='/css/ss-social.css')
+      link(rel='stylesheet', href='/css/app.css')
+      //if lt IE 9
+        script(src='/js/html5shiv.js')
+      link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/ico/apple-touch-icon-144-precomposed.png')
+      link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/ico/apple-touch-icon-114-precomposed.png')
+      link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/ico/apple-touch-icon-72-precomposed.png')
+      link(rel='apple-touch-icon-precomposed', href='/ico/apple-touch-icon-57-precomposed.png')
+      link(rel='shortcut icon', href='/ico/favicon.png')
+      include includes/analytics
+      +analytics('UA-25680416-1')
+  body(class=bodyclass, data-spy='scroll', data-target='.site-sidebar')
+    header.navbar.navbar-default.site-nav(role='navigation')
+      block header
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.nav-collapse')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href=locals.url, title=locals.name)
+              img(alt=locals.description, src='/img/logo-alt.png', width='200px')
+          nav.pull-right.navbar-collapse.collapse.nav-collapse
+            include includes/menu
+            ul.nav.navbar-nav
+              +menu('Home', '/')
+              +menu('Seminars', '/seminars/')
+              +menu('Workshops', '/workshops/')
+              +menu('Talks', '/talks/')
+              +menu('People', '/people/')
+    block subhead
+    .container.site-content
+      block content
+      hr.featurette-divider
+    footer.container.site-footer(role='contentinfo')
+      block footer
+        .container
+          .row
+            ul.services.pull-right.unstyled
+              li
+                a.ss-icon.ss-social-circle.ss-twitter(href='https://twitter.com/imperialacm')
+              li
+                a.ss-icon.ss-social-circle.ss-googleplus(href='https://plus.google.com/u/0/communities/114497947449485471277')
+              li
+                a.ss-icon.ss-social-circle.ss-facebook(href='https://www.facebook.com/imperialacm')
+              li
+                a.ss-icon.ss-social-circle.ss-linkedin(href='http://www.linkedin.com/groups/Imperial-College-London-ACM-Student-6522268')
+              li
+                a.ss-icon.ss-social-circle.ss-octocat(href='https://github.com/imperialacm')
+            p.credit
+              &copy; #{ new Date().getFullYear() } #{ locals.owner }
+    a.top(href='#', data-spy='affix')
+      span.glyphicon.glyphicon-arrow-up
+    script(src='http://code.jquery.com/jquery-latest.js')
+    script(src='/js/html5shiv.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/app.js')
+    script
+      !function ($) {
+        $(function(){
+          $('#carousel').carousel()
+        })
+      }(window.jQuery)
+    //include search
+    //+search
+    script
+      (function() {
+        var cx = '003181222941417911505:gkvhcekze7e';
+        var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+      })();

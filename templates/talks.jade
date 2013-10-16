@@ -1,0 +1,20 @@
+extends layout
+
+block prepend title
+  | #{page.title} - 
+
+block content
+  - var talks = _.chain(contents.talks._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().groupBy(function(item) {
+  -   return item.date.getFullYear()
+  - }).value()
+  - var years = _.chain(talks).keys().reverse().value()
+
+  .page-header
+    h1 Talks
+    p.lead 
+  .row
+    section(role='main')
+    aside(role='complementary')
+      !{ typogr(page.html).typogrify() }

@@ -1,0 +1,259 @@
+@import "mixins.less";
+@import "variables.less";
+
+.site-nav {
+  background-color: #fff;
+  border-color: #fff;
+  /*border-bottom: 1px solid #d4d4d4;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);*/
+  margin: 0;
+  min-height: 8em;
+
+  .navbar-brand {
+    margin-left:0;
+    padding: 0;
+    margin-top: 1.05em;
+  }
+
+  .navbar-nav {
+    margin-top: 1.125em;
+
+    li.active {
+      a {
+        color: #242628;
+        font-weight: bold;
+        position: relative;
+        &:hover {
+          background: none;
+          color: #242628;
+        }
+      }
+    }
+
+    li {
+      a {
+        color: #242628;
+        display: block;
+        padding: 21px 20px;
+        -moz-transition: color 0.25s ease-in;
+        -webkit-transition: color 0.25s ease-in;
+        -o-transition: color 0.25s ease-in;
+        transition: color 0.25s ease-in;
+
+        &:hover {
+          background: none;
+          color: #5ba4e5;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .active>a {
+      background-color: #fff;
+    }
+  }
+}
+
+.carousel {
+  margin-top: 8em;
+  margin-bottom: 60px;
+
+  .carousel-caption {
+    z-index: 10;
+  }
+
+  .carousel-inner {
+    .item {
+      height: 500px;
+      background-color: #777;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 500px; 
+      }
+    }
+  }
+}
+
+.site-sidebar.affix {
+  position: fixed;
+}
+
+.site-sidenav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.site-sidebar .nav > li > a {
+  display: block;
+  color: #666;
+  padding: 4px 20px;
+}
+.site-sidebar .nav > li > a:hover,
+.site-sidebar .nav > li > a:focus {
+  text-decoration: none;
+  border-left: 1px solid #d5d5d5;
+}
+.site-sidebar .nav > .active > a,
+.site-sidebar .nav > .active:hover > a,
+.site-sidebar .nav > .active:focus > a {
+  font-weight: 500;
+  color: #2a6496;
+  background-color: transparent;
+  border-left: 1px solid #2a6496;
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    .carousel-caption p {
+      margin-bottom: 20px;
+      font-size: 21px;
+      line-height: 1.4;
+    }
+  }
+}
+
+/* Large desktops and up */
+@media screen and (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  .site-sidebar.affix {
+    width: 370px;
+  }
+}
+
+/*.acm-nav {
+  text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+  background-color: #0093d0;
+  border-color: #005daa;
+  box-shadow: 0 1px 0 rgba(255,255,255,.1);
+
+  .navbar-collapse {
+    border-color: #005daa;
+  }
+  .navbar-brand {
+    color: #fff;
+  }
+  .navbar-nav > li > a {
+    color: #cdbfe3;
+  }
+  .navbar-nav > li > a:hover {
+    color: #fff;
+  }
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: #005daa;
+  }
+  .navbar-toggle {
+    border-color: #563d7c;
+  }
+  .navbar-toggle:hover {
+    background-color: #005daa;
+    border-color: #005daa;
+  }
+}*/
+
+.site-content {
+  section[role='main'] {
+    .make-md-column(8);
+  }
+
+  aside {
+    .make-md-column(4);
+  }
+}
+
+.people {
+  text-align: center;
+
+  h3 {
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+}
+
+.featurette-divider {
+  margin: 40px 0;
+}
+
+.site-footer {
+
+  .services {
+    margin: 0 0 42px;
+
+    li {
+      display: inline-block;
+      margin-left: 8px;
+
+      a {
+        color: #a7a9aa;
+        font-size: 32px;
+        -moz-transition: color 0.25s ease-in;
+        -webkit-transition: color 0.25s ease-in;
+        -o-transition: color 0.25s ease-in;
+        transition: color 0.25s ease-in;
+
+        &:hover {
+          color: #428bca;
+          /*color: #9a9c9d;*/
+        }
+      }
+    }
+  }
+
+  .credit {
+    color: #777;
+    margin: 8px 0;
+  }
+}
+
+/* Hide the top link initially */
+.top {
+  display: none;
+}
+
+.top.affix-top {
+  margin-left: -10000px;
+}
+
+@media screen and (min-width: 768px) {
+  .top {
+    display: block; /* Unhide */
+    float: left;
+    padding: 10px 15px;
+    font-weight: 500;
+    color: #999;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+  
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+      background-color: #999;
+    }
+  }
+  .top.affix {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+
+
+.event-list {
+  li {
+    border-top: 1px solid #eee;
+    margin: 0;
+    padding: 1em;
+  }
+}
