@@ -4,3 +4,69 @@ urlset(
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd",
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
   - var buildDate = new Date().toISOString()
+  url
+    loc= locals.url
+    lastmod= buildDate
+    changefreq weekly
+    priority 1.0
+  url
+    loc= locals.url + "/news/"
+    lastmod= buildDate
+    changefreq weekly
+    priority 1.0
+  - var news = _.chain(contents.news._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().sortBy(function(item) {
+  -   return -item.date
+  - }).value()
+  each item in news
+    - var permalink = locals.url + item.url
+    url
+      loc= permalink
+      lastmod= buildDate
+      changefreq weekly
+      priority 1.0
+  url
+    loc= locals.url + "/events/"
+    lastmod= buildDate
+    changefreq weekly
+    priority 1.0
+  - var events = _.chain(contents.events._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().sortBy(function(item) {
+  -   return -item.date
+  - }).value()
+  each event in events
+    - var permalink = locals.url + event.url
+    url
+      loc= permalink
+      lastmod= buildDate
+      changefreq weekly
+      priority 1.0
+  url
+    loc= locals.url + "/seminars/"
+    lastmod= buildDate
+    changefreq weekly
+    priority 1.0
+  - var seminars = _.chain(contents.seminars._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().sortBy(function(item) {
+  -   return -item.date
+  - }).value()
+  each seminar in seminars
+    - var permalink = locals.url + seminar.url
+    url
+      loc= permalink
+      lastmod= buildDate
+      changefreq weekly
+      priority 1.0
+  url
+    loc= locals.url + "/workshops/"
+    lastmod= buildDate
+    changefreq weekly
+    priority 1.0
+  url
+    loc= locals.url + "/people/"
+    lastmod= buildDate
+    changefreq monthly
+    priority 1.0

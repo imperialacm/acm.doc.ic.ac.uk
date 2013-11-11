@@ -6,7 +6,7 @@ email: r.neykova@imperial.ac.uk
 photo: /img/people/rumi.jpg
 template: person.jade
 ---
-Rumyana Neykova is a second year PH.D student at Imperial College
+Rumyana Neykova is a second year PhD student at Imperial College
 London, under the supervision of Prof. Nobuko Yoshida. She holds a
 bachelor in Computer Science from University of Sofia (2009), Bulgaria
 and a Master in Software engineering from Imperial College London

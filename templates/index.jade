@@ -26,137 +26,101 @@ block subheader
     a.right.carousel-control(href='#site-carousel', data-slide='next')
       span.icon-next
 
-block subhead
-  .jumbotron
-    .container
-      h2 Be part of a community. Be a contributor.
-      p
-        | Being a researcher means to know how to inspire, how to
-        | share ideas, how to create and grow a community, how to
-        | contribute. Imperial Student Chapter is a great opportunity
-        | to create and grow a community together, gaining research
-        | skills on the way and learning from each other. The many
-        | organisation activities will help you to develop and
-        | demonstrate leadership capabilities.
-
 block content
-  - var seminars = _.chain(contents.seminars._.directories).map(function(item) {
-  -   return item.index
-  - }).compact().sortBy(function(item) {
-  -   return -item.date
-  - }).first(1).value()
-
-  section.upcoming
-    .container
-      h2 Upcoming events 
-        span.text-muted organised by the chapter.
-      p.lead Stay in touch with the latest events run by the chapter.
-      .row
-        .col-lg-12
-          ul.list-unstyled
-            each seminar in seminars
-              li
-                h4.event-title
-                  a(href=seminar.url)= seminar.title
-                  | 
-                  span.text-muted= seminar.metadata.author
-                p
-                  = moment(seminar.metadata.date).format('dddd, MMMM Do, YYYY, h:mm a')
-                  |  in 
-                  = seminar.metadata.room
-                !{ typogr(seminar.html).typogrify() } 
-          p.view-all
-            a.btn.btn-default(href='/seminars/') View all seminars »
-
-  hr.featurette-divider
+  section
+    h1 Be part of a community. Be a contributor.
+    p.lead
+      | Being a researcher means to know how to inspire, how to
+      | share ideas, how to create and grow a community, how to
+      | contribute. Imperial College London ACM Student Chapter is a great opportunity
+      | to create and grow a community together, gaining research
+      | skills on the way and learning from each other. The many
+      | organisation activities will help you to develop and
+      | demonstrate leadership capabilities.
 
   section.events
-    .container
-      h2 Imperial College London ACM Student Chapter
-      p.lead
-      .row
-        .col-lg-12
-          p
-            | Through all the events you will get to know the other postgraduate students in the department and their research interests. You can find students working on similar problems, with similar interests. You can find future collaborators, discuss ideas and get feedback. In addition, activities of the student chapter provide opportunities to meet distinguished computing professionals and grow your professional network. You will broaden your knowledge by taking part in lectures and discussions from different computer science fields.
-      .row
-        .col-lg-4
-          h3 Workshop
-          p
-            | The Imperial College Computing Student Workshop (ICCSW) is a purely
-            | student-run event for doctoral students from all over the world to
-            | share and discuss their research in computer science. The workshop
-            | is unique in that submitting authors get the experience of reviewing
-            | other students’ papers, providing them with a foretaste of being in
-            | the program committee of a conference. For students in the local
-            | steering committee, it is a great opportunity to learn about
-            | everything that is involved in the organization of a
-            | conference and develop new skills.
-            | ICCSW provides a great platform for meeting doctoral students from
-            | other international universities and forming collaborations between
-            | research groups.
-          p
-            a.btn.btn-default(href='/workshops/') Learn more »
-        .col-lg-4
-          h3 Seminars
-          p
-            | Informal talks given by postgraduate students
-            | designed for (research) students working in any area of computer
-            | science. They provide a platform for learning about other, possibly
-            | related, research areas and discuss ideas. The seminars are easily
-            | understandable for any postgraduate student in the department, not
-            | requiring any specialist knowledge. The only constraint on the topic of
-            | a talk is that it is of interest to other research students. This means
-            | that a talk does not have to be about the speaker’s research project,
-            | but could be work done during free time or other academic activities.
-          p
-            a.btn.btn-default(href='/seminars/') Learn more »
-        .col-lg-4
-          h3 Technical Talks
-          p
-            | Talks given by former Imperial students, who are now  working in either industry or other research institutes. These talks are different from other company talks in the department in that they are targeted towards research students, outlining perspectives, giving advice, and providing a platform for asking questions.
-          p
-            a.btn.btn-default(href='/talks/') Learn more »
-
-  hr.featurette-divider
+    h2 Imperial College London ACM Student Chapter
+    p.lead
+    .row
+      .col-lg-12
+        p
+          | Through all the events you will get to know the other postgraduate students in the department and their research interests. You can find students working on similar problems, with similar interests. You can find future collaborators, discuss ideas and get feedback. In addition, activities of the student chapter provide opportunities to meet distinguished computing professionals and grow your professional network. You will broaden your knowledge by taking part in lectures and discussions from different computer science fields.
+    .row
+      .col-lg-4
+        img.img-responsive(src='/img/workshops.jpg')
+        h3 Workshops
+        p
+          | Purely student-run events for research students from all over the world to
+          | share and discuss their research in computer science. The workshop
+          | is unique in that submitting authors get the experience of reviewing
+          | other students’ papers, providing them with a foretaste of being in
+          | the program committee of a conference. It is a great opportunity to learn about
+          | everything that is involved in the organization of a
+          | conference.
+        p
+          a.btn.btn-default(href='/workshops/') Learn more »
+      .col-lg-4
+        img.img-responsive(src='/img/seminars.jpg')
+        h3 Seminars
+        p
+          | Explaining your research in a simple and understandable way is a
+          | professional necessity and the seminars series are unique venue for
+          | students to practice these skills. 
+          | The only constraint on the topic of
+          | a talk is that it is of interest to other research students. This means
+          | that a talk does not have to be about the speaker’s research project,
+          | but could be work done during free time or other academic activities.
+        p
+          a.btn.btn-default(href='/seminars/') Learn more »
+      .col-lg-4
+        img.img-responsive(src='/img/events.jpg')
+        h3 Events
+        p
+          | The kinds of activities a student chapter can undertake are diverse
+          | and it is up to all of us, the chapter members, to decide and organise
+          | activities that are useful and interesting. If you have an idea -
+          | for a competition, a tutorial, a side tour, or something else -
+          | raise your voice. The Chapter also has a small budget and might be able
+          | to sponsor the event. You can find more information and
+          | inspiration for chapter activities here.
+        p
+          a.btn.btn-default(href='/events/') Learn more »
 
   section.join
-    .container
-      h2 Become a member 
-        span.text-muted and get involved.
-      p.lead Sign-up for updates and details on how to get involved
-      .row
-        .col-lg-12
-          p The first step for you to get involved is to join the chapter. You can be involved as a listener, as an organiser, as a speaker; it is your choice how and how much you want to contribute. Memberships are open to all Imperial postgraduate students and you don’t have to be an ACM member to join the Imperial ACM Student Chapter.
-      .row
-        .col-lg-6
-          .contact-form
-            form(action='mailto:acm-student@imperial.ac.uk', method='get', role='form')
-              .form-group
-                input.input-lg.form-control(type='email', id='signup-email', placeholder='Enter email')
-              button.input-lg.btn.btn-primary(type='submit') Sign up
+    h2 Sign-up for updates 
+      span.text-muted and never miss any event.
+    p.lead Sign-up for details on how to get involved. 
+    p
+      | By subscribing to the announcement mailing list or following the chapter on social
+      | networks, you will get notified on all upcoming chapter events.
+    .row
+      .col-lg-6
+        .contact-form
+          form(action='/signup-form.php', method='post', name='signup-form', role='form')
+            .form-group
+              input.form-control(type='email', name='email', id='signup-email', placeholder='Enter your email')
+            button.btn.btn-default(type='submit') Sign up
 
-  hr.featurette-divider
-
-  - var people = _.chain(contents.people._.directories).map(function(item) {
-  -   return item.index
-  - }).compact().sortBy(function(item) {
-  -   return item.metadata.order
-  - }).value()
-
-  section.team
-    .container
-      .row
-        .col-lg-12
-          h2 The team 
-            span.text-muted behind the chapter.
-          p.lead
-            | We are students in the Department of Computing
-      .row
-        each person in people
-          .col-lg-2
-            .people
-              img.thumb.img-circle(src=person.metadata.photo, width=100)
-              h4
-                a(href='/people/#' + person.metadata.name)= person.metadata.name
-              h4
-                span.text-muted= person.metadata.position
+  section.join
+    h2 Become a member 
+      span.text-muted and get involved.
+    p.lead Join the chapter and get involved in chapter activities.
+    p
+      | The first step for you to get involved is to join the chapter. You
+      | can be involved as a listener, as an organiser, as a speaker; it is
+      | your choice how and how much you want to contribute. Memberships are
+      | open to all Imperial postgraduate students and you don’t have to be
+      | an ACM member to join the Imperial College London ACM Student Chapter.
+    .row
+      .col-lg-6
+        form(action='/membership-form.php', method='post', name='membership-form', role='form')
+          .form-group
+            label(for='input-name') Your name
+            input#input-name.form-control(type='text', name='name', maxlength=100)
+          .form-group
+            label(for='input-email') Your email address
+            input#input-email.form-control(type='email', name='email')
+          .form-group
+            label(for='input-membership') Your ACM membership number
+            input#input-subject.form-control(type='text', name='membership', maxlength=100)
+          button.btn.btn-default(type='submit') Submit

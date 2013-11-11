@@ -1,27 +1,37 @@
 extends layout
 
+mixin author(authorName)
+  - var author = contents.authors[authorName + '.json']
+  a.photo(href='#')
+    img.img-circle(src=author.metadata.photo, width=100)
+  p
+    span.author
+      if author
+        a(href='mailto:'+author.metadata.email)= author.metadata.name
+      else
+        =authorName
+    | &nbsp;
+    = author.metadata.bio
+    | &nbsp;
+    a(href=author.metadata.homepage) More about me→
+
 block prepend title
-  | #{page.title} -
+  | #{page.title} - 
 
 block content
-  - var seminars = _.chain(contents.seminars._.directories).map(function(item) {
-  -   return item.index
-  - }).compact().sortBy(function(item) {
-  -   return item.title
-  - }).value()
-
-  .page-header
-    h1 Seminar
-  .row
-    section(role='main')
-      h3= page.title
-      div!= page.html
-    aside(role='complementary')
-      .panel.panel-default
-        .panel-body
-          h4 Speaker
-          p= page.metadata.author
-          h4 Date
-          p= moment(page.metadata.date).format('dddd, MMMM Do, YYYY, h:mm a')
-          h4 Room
-          p= page.metadata.room
+  section
+    article.event
+      header
+        p.date
+          span= moment(page.metadata.date).format('MMM Do, YYYY, h:mm a')
+          |  in  
+          = page.metadata.room
+        h2
+          a(href=page.url)= page.title
+      section.content
+        !{ typogr(page.html).typogrify() }
+      .meta
+        mixin author(page.metadata.author)
+    .clearfix
+    include includes/disqus
+    +disqus('imperialacm')

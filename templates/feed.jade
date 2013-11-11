@@ -5,7 +5,9 @@ rss(version='2.0',
     xmlns:dc='http://purl.org/dc/elements/1.1/'
     xmlns:atom='http://www.w3.org/2005/Atom')
   channel
-    - var news = _.chain(contents.news).sortBy(function(item) {
+    - var news = _.chain(contents.news._.directories).map(function(item) {
+    -   return item.index
+    - }).sortBy(function(item) {
     -   return -item.date
     - }).value()
     title= locals.name

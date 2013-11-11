@@ -1,8 +1,8 @@
 ---
 title: The What, How and Why
-date: 10/11/2013
-author: Petr Hosek
-room: 212
+date: 10/11/2013 15:00
+author: petr-hosek
+room: William Penny 212
 template: seminar.jade
 ---
 In the first talk of the newly re-started student seminar series, I am

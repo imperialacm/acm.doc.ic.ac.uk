@@ -4,27 +4,44 @@ block prepend title
   | #{page.title} - 
 
 block content
-  - var people = _.chain(contents.people._.directories).map(function(item) {
-  -   return item.index
-  - }).compact().sortBy(function(item) {
-  -   return item.metadata.order
-  - }).value()
-
-  .page-header
-    h1 What is ACM?
+  section
+    h1 People
     p.lead
-      | Imperial College London ACM Student Chapter has been
-      | established as the first active ACM chapter in United Kingdom.
-  .row
-    section(role='main')
-      each person in people
-        .media
-          a.pull-left(href='#')
-            img.img-circle.media-object(src=person.metadata.photo, width=80)
-          .media-body
-            h4.media-heading= person.metadata.name
-              | 
-              span.text-muted= person.metadata.position
-            !{ person.html }
-    aside(role='complementary')
-      !{ page.html }
+      | Whenever you have something to say, just talk to us,
+      | we are here for you.
+
+    - var people = _.chain(contents.people._.directories).map(function(item) {
+    -   return item.index
+    - }).compact().sortBy(function(item) {
+    -   return item.metadata.order
+    - }).value()
+
+    each person in people
+      article.event
+        header
+          a.photo(href='#')
+            img.img-circle(src=person.metadata.photo, width=100)
+          h2= person.metadata.name
+            | 
+            span.text-muted= person.metadata.position
+        section.content
+          !{ typogr(person.html).typogrify() }
+
+    - var members = _.chain(contents.people._.pages).filter(function(item) {
+    -   return 'name' in item.metadata
+    - }).sortBy(function(item) {
+    -   return item.metadata.name
+    - }).value()
+
+    section.team
+      h2 Members 
+        span.text-muted of the chapter.
+      p.lead
+        | Student of Imperial College London who are contributed to make a
+        | difference.
+      .row
+        each member in members
+          .col-lg-2
+            .people
+              img.thumb.img-circle(src='/img/' + member.filename.replace(/(.+)\.[^.]+$/, '$1') + '.jpg', width=100)
+              h4= member.metadata.name

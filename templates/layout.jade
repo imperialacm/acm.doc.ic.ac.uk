@@ -16,6 +16,7 @@ html(lang='en')
       link(rel='stylesheet', href='/css/bootstrap.min.css')
       link(rel='stylesheet', href='/css/ss-social.css')
       link(rel='stylesheet', href='/css/app.css')
+      link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans')
       //if lt IE 9
         script(src='/js/html5shiv.js')
       link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/ico/apple-touch-icon-144-precomposed.png')
@@ -23,8 +24,9 @@ html(lang='en')
       link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/ico/apple-touch-icon-72-precomposed.png')
       link(rel='apple-touch-icon-precomposed', href='/ico/apple-touch-icon-57-precomposed.png')
       link(rel='shortcut icon', href='/ico/favicon.png')
+      link(rel='publisher', href='http://plus.google.com/109158233053938515993')
       include includes/analytics
-      +analytics('UA-25680416-1')
+      +analytics('UA-45260420-1')
   body(class=bodyclass, data-spy='scroll', data-target='.site-sidebar')
     header.navbar.navbar-default.site-nav(role='navigation')
       block header
@@ -34,55 +36,80 @@ html(lang='en')
               span.icon-bar
               span.icon-bar
               span.icon-bar
-            a.navbar-brand(href=locals.url, title=locals.name)
+            a.navbar-brand(href='/', title=locals.name)
               img(alt=locals.description, src='/img/logo-alt.png', width='200px')
           nav.pull-right.navbar-collapse.collapse.nav-collapse
             include includes/menu
             ul.nav.navbar-nav
-              +menu('Home', '/')
+              +menu('News', '/news/')
+              //-li.dropdown
+                //-a.dropdown-toggle(href='#', data-toggle='dropdown') Seminars
+                  //-b.caret
+                //-ul.dropdown-menu
+                  //-li: a(href='/seminars/') Seminar
+                  //-li: a(href='/seminars/guidelines.html') Guidelines
+              +menu('Events', '/events/')
               +menu('Seminars', '/seminars/')
               +menu('Workshops', '/workshops/')
-              +menu('Talks', '/talks/')
               +menu('People', '/people/')
-    block subhead
-    .container.site-content
+            //+search('Search')(class='navbar-form navbar-right')
+    .site-content
       block content
-      hr.featurette-divider
-    footer.container.site-footer(role='contentinfo')
+    footer.site-footer(role='contentinfo')
       block footer
-        .container
+        .container.content
           .row
-            ul.services.pull-right.unstyled
-              li
-                a.ss-icon.ss-social-circle.ss-twitter(href='https://twitter.com/imperialacm')
-              li
-                a.ss-icon.ss-social-circle.ss-googleplus(href='https://plus.google.com/u/0/communities/114497947449485471277')
-              li
-                a.ss-icon.ss-social-circle.ss-facebook(href='https://www.facebook.com/imperialacm')
-              li
-                a.ss-icon.ss-social-circle.ss-linkedin(href='http://www.linkedin.com/groups/Imperial-College-London-ACM-Student-6522268')
-              li
-                a.ss-icon.ss-social-circle.ss-octocat(href='https://github.com/imperialacm')
-            p.credit
-              &copy; #{ new Date().getFullYear() } #{ locals.owner }
-    a.top(href='#', data-spy='affix')
-      span.glyphicon.glyphicon-arrow-up
-    script(src='http://code.jquery.com/jquery-latest.js')
-    script(src='/js/html5shiv.js')
-    script(src='/js/bootstrap.min.js')
-    script(src='/js/app.js')
-    script
-      !function ($) {
-        $(function(){
-          $('#carousel').carousel()
-        })
-      }(window.jQuery)
-    //include search
-    //+search
-    script
-      (function() {
-        var cx = '003181222941417911505:gkvhcekze7e';
-        var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-      })();
+            .about.col-lg-7
+              h3 About Imperial College London ACM Student Chapter
+              p
+                | The aim of Imperial College London ACM Student Chapter is to
+                | create a strong Computing research student community within
+                | our university. We encourage all students to actively
+                | participate in organising and attending chapter activities.
+            .social.col-lg-5
+              ul.services.pull-right.unstyled
+                li
+                  a.ss-icon.ss-social-circle.ss-mail(href='mailto:acm@imperial.ac.uk')
+                li
+                  a.ss-icon.ss-social-circle.ss-twitter(href='https://twitter.com/imperialacm')
+                li
+                  a.ss-icon.ss-social-circle.ss-googleplus(href='https://plus.google.com/u/0/communities/114497947449485471277')
+                li
+                  a.ss-icon.ss-social-circle.ss-facebook(href='https://www.facebook.com/imperialacm')
+                li
+                  a.ss-icon.ss-social-circle.ss-linkedin(href='http://www.linkedin.com/groups/Imperial-College-London-ACM-Student-6522268')
+                li
+                  a.ss-icon.ss-social-circle.ss-octocat(href='https://github.com/imperialacm')
+          //-.sitemap.row
+            //-ul.list-unstyled
+              //-li: strong Chapter
+              //-each
+            //-ul.list-unstyled
+              //-li: strong Seminars
+              //-li: a Guidelines
+          .signoff
+            //-a.logo(href=locals.url, title=locals.name)
+              //-img(alt=locals.description, src='/img/logo-inverse-alt.png', width='150px')
+            p.credit &copy; #{ new Date().getFullYear() } 
+              a(href=locals.url)= locals.owner
+    block scripts
+      script(src='http://code.jquery.com/jquery-latest.js')
+      script(src='https://apis.google.com/js/plusone.js')
+      script(src='/js/html5shiv.js')
+      script(src='/js/bootstrap.min.js')
+      script(src='/js/app.js')
+      script
+        !function ($) {
+          $(function(){
+            $('#carousel').carousel()
+          })
+        }(window.jQuery)
+      //include search
+      //+search
+      script
+        (function() {
+          var cx = '003181222941417911505:gkvhcekze7e';
+          var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+        })();

@@ -1,0 +1,5 @@
+{
+  "title": "News",
+  "template": "articles.jade",
+  "lead": "Stay in touch with the latest news from your chapter."
+}
