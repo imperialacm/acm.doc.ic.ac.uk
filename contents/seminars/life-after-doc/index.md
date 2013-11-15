@@ -2,7 +2,7 @@
 title: Life After DoC
 date: 11/15/2013 15:00
 author: nick-dingle
-room: Huxley 217/218
+room: Huxley LT308
 template: seminar.jade
 ---
 What do you do with a BA in War Studies? In my case: an MSc and a PhD at
