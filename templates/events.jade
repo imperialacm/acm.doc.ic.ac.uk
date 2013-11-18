@@ -21,13 +21,16 @@ block content
         article.event
           header
             p.date
-              span= moment(event.metadata.date).format('MMM Do, YYYY, h:mm a')
+              span= moment.utc(event.metadata.date).format('MMM Do, YYYY, h:mm a')
               |  in  
               = event.metadata.room
             h2
               a(href=event.url)= event.title
           section.content
             !{ typogr(event.intro).typogrify() }
-            include includes/disqus
-            +disqus_link(event.url, 'imperialacm')
+            a(href=event.url + '#disqus_thread', data-disqus-identifier=event.url) Link
         .clearfix
+
+block append scripts
+  include includes/disqus
+  +disqus_script('imperialacm')

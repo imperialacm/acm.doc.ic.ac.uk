@@ -1,7 +1,10 @@
-mixin disqus(shortname)
+mixin disqus(shortname, identifier, title, url)
   #disqus_thread
   script.
     var disqus_shortname = '!{shortname}';
+    var disqus_identifier = '!{identifier}';
+    var disqus_title = '!{title}';
+    var disqus_url = '!{locals.url + url}';
     
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -12,8 +15,7 @@ mixin disqus(shortname)
     Please enable JavaScript to view the 
     a(href='http://disqus.com/?ref_noscript') comments powered by Disqus.
 
-mixin disqus_link(url, shortname)
-  a(href=url + '#disqus_thread') Link
+mixin disqus_script(shortname)
   script.
     var disqus_shortname = '!{shortname}';
 
@@ -21,5 +23,5 @@ mixin disqus_link(url, shortname)
         var s = document.createElement('script'); s.async = true;
         s.type = 'text/javascript';
         s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
     }());

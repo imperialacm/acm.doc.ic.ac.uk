@@ -93,23 +93,8 @@ html(lang='en')
             p.credit &copy; #{ new Date().getFullYear() } 
               a(href=locals.url)= locals.owner
     block scripts
-      script(src='http://code.jquery.com/jquery-latest.js')
-      script(src='https://apis.google.com/js/plusone.js')
-      script(src='/js/html5shiv.js')
+      script(src='/js/jquery.js')
       script(src='/js/bootstrap.min.js')
       script(src='/js/app.js')
-      script.
-        !function ($) {
-          $(function(){
-            $('#carousel').carousel()
-          })
-        }(window.jQuery)
       //-include search
       //-+search
-      script.
-        (function() {
-          var cx = '003181222941417911505:gkvhcekze7e';
-          var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-        })();
