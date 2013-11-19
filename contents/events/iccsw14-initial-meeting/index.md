@@ -54,4 +54,4 @@ organisation team will involve:
 1. Within reasons, of course. <a href="#fnref-1" class="footnote-backref">&#8617;</a>
 
 To learn more, join our initial meeting! If you are interested, please
-send us an email or leave comment. 
+send us an email or leave a comment. 
