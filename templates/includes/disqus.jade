@@ -3,7 +3,7 @@ mixin disqus(shortname, identifier, title, url)
   script.
     var disqus_shortname = '!{shortname}';
     var disqus_identifier = '!{identifier}';
-    var disqus_title = '!{title}';
+    var disqus_title = '!{escape(title)}';
     var disqus_url = '!{locals.url + url}';
     
     (function() {
