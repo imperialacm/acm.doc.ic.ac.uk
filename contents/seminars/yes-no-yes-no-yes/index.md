@@ -16,3 +16,9 @@ other. However, Argumentation Theory can also be applied in a wide range
 of other decision-making scenarios, such as deciding on the medical
 treatment of a given patient or evaluating whether or not a defendant is
 guilty in court.
+
+<span class="more"></span>
+
+<script async class="speakerdeck-embed"
+data-id="3508696033fc01318ccd4abbc2750c96" data-ratio="1.33333333333333"
+src="//speakerdeck.com/assets/embed.js"></script>

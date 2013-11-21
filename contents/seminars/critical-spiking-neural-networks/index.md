@@ -21,3 +21,9 @@ networks.  This talk will be for those of you who are curious on how to
 make an artificial "brain" and how the chaos in your mind not only makes
 your forget where your house keys are but also optimizes your thought
 processes.
+
+<span class="more"></span>
+
+<script async class="speakerdeck-embed"
+data-id="f87c637033fc0131f2bf2ec9cfcab464" data-ratio="1.33333333333333"
+src="//speakerdeck.com/assets/embed.js"></script>

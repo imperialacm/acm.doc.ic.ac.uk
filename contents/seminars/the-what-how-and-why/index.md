@@ -16,3 +16,9 @@ Department. I will explain the importance of these student activities,
 both from research as well as career perspective using my own
 experience and tell you how to take a part and become actively
 involved.
+
+<span class="more"></span>
+
+<script async class="speakerdeck-embed"
+data-id="f20062e033fb0131561106dd63e41523" data-ratio="1.33333333333333"
+src="//speakerdeck.com/assets/embed.js"></script>

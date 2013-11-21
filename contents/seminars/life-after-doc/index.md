@@ -12,3 +12,9 @@ Department as a post-doc in the research group with which I did my PhD.
 In this talk I will discuss my experience of working in a variety of
 environments and reflect on how my time(s) at DoC prepared me for what
 was to come.
+
+<span class="more"></span>
+
+<script async class="speakerdeck-embed"
+data-id="0ab32e3033fd01317a542a8d2c883be5" data-ratio="1.33333333333333"
+src="//speakerdeck.com/assets/embed.js"></script>
