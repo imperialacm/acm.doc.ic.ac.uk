@@ -13,11 +13,11 @@ This year, for [Computer Science Education Week](http://csedweek.org/),
 a massive campaign called the Hour of Code is introducing 10 million
 students to try one hour of introductory computer science.
 
-We are bringing this campaing to Imperial College London, so all
+We are bringing this campaign to Imperial College London, so all
 students across all fields can participate.
 [Register](http://imperialcsed.eventbrite.co.uk/) today and join us on
 Wednesday 11th December, between 1pm and 2pm in Royal School of Mines
-G07. We will do our best to demistify "code" and show you that anyone can
+G07. We will do our best to demystify "code" and show you that anyone can
 learn the basics to be a maker, a creator, an innovator.
 
 We are also looking for students who already know how to code and would
