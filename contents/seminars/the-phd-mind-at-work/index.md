@@ -2,7 +2,7 @@
 title: "The PhD Mind @Work: How my degree helps me today"
 date: 12/06/2013 15:00
 author: felipe-franciosi
-room: Huxley 217-218
+room: William Penney Building, room 212
 template: seminar.jade
 ---
 In this talk I will discuss the impact that a PhD has on my life. More
