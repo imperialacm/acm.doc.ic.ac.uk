@@ -23,3 +23,9 @@ possibility through intuitive everyday examples, which appeal to
 intuition and make conveying the ideas behind our research easy and fun.
 Need more reasons to attend this talk? How about never losing an
 argument again?
+
+<span class="more"></span>
+
+<script async class="speakerdeck-embed"
+data-id="44843da04ab7013169ce4e095f3c8ee3" data-ratio="1.33333333333333"
+src="//speakerdeck.com/assets/embed.js"></script>
