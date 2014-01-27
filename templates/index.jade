@@ -119,7 +119,9 @@ block content
             input#input-name.form-control(type='text', name='name', maxlength=100)
           .form-group
             label(for='input-email') Your email address
-            input#input-email.form-control(type='email', name='email')
+            .input-group
+              input#input-email.form-control(type='email', name='email')
+              span.input-group-addon @imperial.ac.uk
           .form-group
             label(for='input-membership') Your ACM membership number
             input#input-subject.form-control(type='text', name='membership', maxlength=100)
