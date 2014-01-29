@@ -14,6 +14,7 @@ mixin author(authorName)
     = author.metadata.bio
     | &nbsp;
     a(href=author.metadata.homepage) More about me→
+  .clearfix
 
 block prepend title
   | #{page.title + " - "}
@@ -46,7 +47,10 @@ block content
             include includes/disqus
             a(href=seminar.url + '#disqus_thread', data-disqus-identifier=seminar.url) Link
           .meta
-            if seminar.metadata.author
+            if seminar.metadata.author instanceof Array
+              each author in seminar.metadata.author
+                +author(author)
+            else
               +author(seminar.metadata.author)
         .clearfix
 
