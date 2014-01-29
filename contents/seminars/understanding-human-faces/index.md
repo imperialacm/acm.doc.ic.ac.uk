@@ -21,3 +21,9 @@ Ormond Street Hospital is helping advance craniofacial surgery
 techniques. Finally, I'll talk about where we can take statistical
 facial modelling in the future, and discuss some of the challenges that
 we most overcome in order to advance.
+
+<span class="more"></span>
+
+<script async class="speakerdeck-embed"
+data-id="c2c208806b1f0131a94e1ece10ede835" data-ratio="1.33333333333333"
+src="//speakerdeck.com/assets/embed.js"></script>
