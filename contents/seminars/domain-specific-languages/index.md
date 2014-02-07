@@ -1,8 +1,7 @@
 ---
 title: "Domain-specific languages: the key to computational efficiency and programmer productivity"
 date: 02/07/2014 15:00
-author:
-  - florian-rathgeber
+author: florian-rathgeber
 room: Huxley 345
 template: seminar.jade
 ---
