@@ -415,14 +415,20 @@ blockquote {
     padding-top: 30px;
 
     .author {
-      font-weight: bold;
-      font-style: normal;
-      margin-right: 1px; 
-      a {
-        color: #333;
-        &:hover {
-          color: #2a6496;
-          text-decoration: none;
+      > p {
+        overflow: hidden;
+      }
+
+      .author-name {
+        font-weight: bold;
+        font-style: normal;
+        margin-right: 1px; 
+        a {
+          color: #333;
+          &:hover {
+            color: #2a6496;
+            text-decoration: none;
+          }
         }
       }
     }

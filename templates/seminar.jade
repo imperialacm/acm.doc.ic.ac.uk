@@ -2,18 +2,19 @@ extends layout
 
 mixin author(authorName)
   - var author = contents.authors[authorName + '.json']
-  a.photo(href='#')
-    img.img-circle(src=author.metadata.photo, width=100)
-  p
-    span.author
-      if author
-        a(href='mailto:'+author.metadata.email)= author.metadata.name
-      else
-        =authorName
-    | &nbsp;
-    = author.metadata.bio
-    | &nbsp;
-    a(href=author.metadata.homepage) More about me→
+  .author
+    a.photo(href='#')
+      img.img-circle(src=author.metadata.photo, width=100)
+    p
+      span.author-name
+        if author
+          a(href='mailto:'+author.metadata.email)= author.metadata.name
+        else
+          =authorName
+      | &nbsp;
+      = author.metadata.bio
+      | &nbsp;
+      a(href=author.metadata.homepage) More about me→
   .clearfix
 
 block prepend title
@@ -37,6 +38,5 @@ block content
             +author(author)
         else
           +author(page.metadata.author)
-    .clearfix
     include includes/disqus
     +disqus('imperialacm', page.url, page.title, page.url)
