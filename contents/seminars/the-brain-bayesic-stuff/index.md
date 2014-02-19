@@ -14,7 +14,3 @@ Why is it that a single example from a new class is sufficient to spawn a new ca
 is essential for learning how the brain functions and how this knowledge can be used to create even more intelligent machines.
 
 <span class="more"></span>
-
-<script async class="speakerdeck-embed"
-data-id="5c04fcd06b22013155f9261ab40822f6" data-ratio="1.33333333333333"
-src="//speakerdeck.com/assets/embed.js"></script>
