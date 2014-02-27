@@ -1,7 +1,7 @@
 ---
 title: "Crouching Time Series, Hidden Markov Model - Applications of HMMs in the Real World"
 date: 02/28/2014 15:00
-author: chris-guenther
+author: tiberiu-chris
 room: Huxley 245
 template: seminar.jade
 ---
