@@ -6,4 +6,5 @@ mixin analytics(id)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', '!{id}', 'ic.ac.uk');
+    ga('require', 'displayfeatures');
     ga('send', 'pageview');

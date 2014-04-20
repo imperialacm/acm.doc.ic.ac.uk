@@ -49,6 +49,17 @@ module.exports = function(grunt) {
         'contents/js/*.js',
         'Gruntfile.js' ]
     },
+    less: {
+      production: {
+        options: {
+          paths: ["contents/css"],
+          cleancss: true
+        },
+        files: {
+          "build/css/app.css": "contents/css/app.less"
+        }
+      }
+    },
     uglify: {
       production: {
         files: {
@@ -97,6 +108,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-hashres');
