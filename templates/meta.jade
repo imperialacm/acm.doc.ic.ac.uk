@@ -1,0 +1,27 @@
+- function simplify(input) {
+-   var tags = /<\/?([a-z][a-z0-9]*)\b[^>]*>|<!--[\s\S]*?-->/gi;
+-   var replaced = input.replace(tags, '').replace(/\s+/gi, ' ');
+-   if (replaced.length <= 200) return replaced;
+-   var trimmed = replaced.substr(0, 197);
+-   return trimmed.substr(0, Math.min(trimmed.length, trimmed.lastIndexOf(' '))) + '...';
+- }
+
+mixin twitter(title, description, image)
+  meta(name='twitter:card', content='summary')
+  meta(name='twitter:site', content='@ImperialACM')
+  meta(name='twitter:creator', content='@ImperialACM')
+  meta(name='twitter:title', content=title)
+  meta(name='twitter:description', content=simplify(description))
+  meta(name='twitter:image:src', content=image)
+
+mixin opengraph(title, description, url, site_name)
+  meta(property='og:title', content=title)
+  meta(property='og:description', content=simplify(description))
+  meta(property='og:url', content=url)
+  meta(property='og:site_name', content=site_name)
+  meta(property='og:type', content='website')
+  meta(property='og:image', content=locals.url+'/img/glyph.png')
+  meta(property='og:locale', content='en_gb')
+
+mixin facebook(id)
+  meta(property='fb:admins', content=id)
