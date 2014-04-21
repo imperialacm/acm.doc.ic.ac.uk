@@ -11,9 +11,9 @@ html(lang='en')
       meta(name='author', content=locals.owner)
       block meta
         include meta
-        +twitter(page.title, page.intro, locals.url+'/img/glyph.png')
-        +opengraph(page.title, page.intro, locals.url, locals.name)
-        +facebook('669242093100445')
+        //-+twitter(page.title, page.intro, locals.url+'/img/glyph.png')
+        //-+opengraph(page.title, page.intro, locals.url, locals.name)
+        //-+facebook('669242093100445')
       title
         block title
           = locals.name
