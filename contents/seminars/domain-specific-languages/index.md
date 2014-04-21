@@ -13,3 +13,9 @@ the case and how domain-specific languages can be used as a building
 block in efficient yet high-level computational frameworks. Not only do
 they provide the key to computational efficiency, but also to programmer
 productivity and more maintainable codes.
+
+<span class="more"></span>
+
+<script async class="speakerdeck-embed"
+data-id="0bb26b70ab82013155723279fa910c9f" data-ratio="1.33159947984395"
+src="//speakerdeck.com/assets/embed.js"></script>

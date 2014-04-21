@@ -14,3 +14,9 @@ simply do not do it, leaving their computers exposed to crash-prone,
 insecure code. In this talk, I will introduce a radically new approach
 that makes updating software less error-prone and disruptive, by making
 use of idle cores in multicore machines. 
+
+<span class="more"></span>
+
+<script async class="speakerdeck-embed"
+data-id="c160a730ab83013155723279fa910c9f" data-ratio="1.33333333333333"
+src="//speakerdeck.com/assets/embed.js"></script>

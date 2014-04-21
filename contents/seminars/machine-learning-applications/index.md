@@ -26,3 +26,9 @@ classification algorithms. Moreover, we show how these techniques can be
 best applied in order to aid the diagnosis of different types of cancer
 and also help in understanding how the human brain works when we are
 performing various actions in our everyday life.
+
+<span class="more"></span>
+
+<script async class="speakerdeck-embed"
+data-id="4f6eb370ab7f0131ea7e0ec58324872e" data-ratio="1.33333333333333"
+src="//speakerdeck.com/assets/embed.js"></script>
