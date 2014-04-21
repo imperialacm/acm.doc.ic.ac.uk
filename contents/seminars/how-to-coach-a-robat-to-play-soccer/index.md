@@ -21,3 +21,7 @@ Videos and concrete examples will be running throughout this talk to
 instantiate my ideas and techniques.
 
 <span class="more"></span>
+
+<script async class="speakerdeck-embed"
+data-id="dae0d9c0abcd0131cef36ad81164bb43" data-ratio="1.33333333333333"
+src="//speakerdeck.com/assets/embed.js"></script>
