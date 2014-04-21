@@ -1,31 +1,31 @@
 extends layout
 
+block header
+  h1 News
+  p.lead
+    | Stay in touch with the latest news from your chapter.
+
 block content
-  section
-    h1 News
-    p.lead
-      | Stay in touch with the latest news from your chapter.
+  each article in articles
+    article.article.intro
+      header
+        p.date
+          span= moment.utc(article.metadata.date).format('MMM Do, YYYY, h:mm a')
+        h2
+          a(href=article.url)= article.title
+      section.content
+        !{ typogr(article.intro).typogrify() }
+        if article.hasMore
+          a(href=article.url) Read more→
 
-    each article in articles
-      article.article.intro
-        header
-          p.date
-            span= moment.utc(article.metadata.date).format('MMM Do, YYYY, h:mm a')
-          h2
-            a(href=article.url)= article.title
-        section.content
-          !{ typogr(article.intro).typogrify() }
-          if article.hasMore
-            a(href=article.url) Read more→
-
-    .text-center
-      ul.pagination
-        if prevPage
-          li: a(href=prevPage.url) &laquo;
-        else
-          li: span &laquo;
-        li: a(href='#') 1
-        if nextPage
-          li: a(href=nextPage.url) &raquo;
-        else
-          li: span &raquo;
+  .text-center
+    ul.pagination
+      if prevPage
+        li: a(href=prevPage.url) &laquo;
+      else
+        li: span &laquo;
+      li: a(href='#') 1
+      if nextPage
+        li: a(href=nextPage.url) &raquo;
+      else
+        li: span &raquo;

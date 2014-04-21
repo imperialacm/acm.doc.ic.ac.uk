@@ -26,18 +26,18 @@ block subheader
     a.right.carousel-control(href='#site-carousel', data-slide='next')
       span.icon-next
 
-block content
-  section
-    h1 Be part of a community. Be a contributor.
-    p.lead
-      | Being a researcher means to know how to inspire, how to
-      | share ideas, how to create and grow a community, how to
-      | contribute. Imperial College London ACM Student Chapter is a great opportunity
-      | to create and grow a community together, gaining research
-      | skills on the way and learning from each other. The many
-      | organisation activities will help you to develop and
-      | demonstrate leadership capabilities.
+block header
+  h1 Be part of a community. Be a contributor.
+  p.lead
+    | Being a researcher means to know how to inspire, how to
+    | share ideas, how to create and grow a community, how to
+    | contribute. Imperial College London ACM Student Chapter is a great opportunity
+    | to create and grow a community together, gaining research
+    | skills on the way and learning from each other. The many
+    | organisation activities will help you to develop and
+    | demonstrate leadership capabilities.
 
+block content
   section.events
     h2 Imperial College London ACM Student Chapter
     p.lead
@@ -85,7 +85,7 @@ block content
           | inspiration for chapter activities here.
         p
           a.btn.btn-default(href='/events/') Learn more »
-
+  hr
   section.join
     h2 Sign-up for updates 
       span.text-muted and never miss any event.
@@ -102,7 +102,7 @@ block content
                 input.form-control(type='email', name='email', id='signup-email', placeholder='Enter your email')
                 span.input-group-addon @imperial.ac.uk
             button.btn.btn-default(type='submit') Sign up
-
+  hr
   section.join
     h2 Become a member 
       span.text-muted and get involved.

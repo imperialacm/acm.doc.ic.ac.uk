@@ -75,25 +75,95 @@ blockquote {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: @screen-lg) {
   .container {
     max-width: 970px;
   }
 }
 
-.site-nav {
-  background-color: #fff;
-  //border-bottom: 1px solid #f1f1f1;
+.navbar-default {
+  .navbar-brand {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .navbar-toggle {
+    border-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .icon-bar {
+      background-color: #fff;
+    }
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}
+
+.navbar-collapse.nav-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-default {
+  @media (max-width: 480px) {
+    background-color: #ddd;
+  }
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+}
+
+.navbar .nav {
+  @media (min-width: @screen-sm) {
+    float: right;
+  }
+}
+
+.navbar-inner {
+  margin-top: 50px;
+}
+
+.site-navbar-affixed {
+  width: 100%;
+  .transition(all 0.1s ease-out);
+  @media (max-width: 767px) {
+    &.affix-top, &.affix {
+      background-color: #363636;
+      box-shadow: none;
+      opacity: 1;
+      width: 100%;
+      z-index: 999;
+      .navbar-inner {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.site-navbar-affixed.affix {
+  background-color: #363636;
+  box-shadow: none;
+  opacity: 1;
+  width: 100%;
+  z-index: 999;
+  .navbar-inner {
+    margin-top: 0;
+  }
+}
+
+.site-navbar {
+  background-color: transparent;
   border-color: #fff;
   border-radius: 0px;
   border-width: 0;
-  //border-bottom: 1px solid rgba(0,0,0,0.08);
-  //.box-shadow(0 1px 1px rgba(6,8,8,0.1));
   margin: 0;
-  padding: 20px 0;
+  //padding-top: 20px;
+  padding-bottom: 10px;
+  position: absolute;
   width: 100%;
   .navbar-brand {
-    margin-left:0;
+    margin-left: 0 !important;
     padding: 0;
     margin-top: 10px;
   }
@@ -102,40 +172,31 @@ blockquote {
       margin-top: 0;
       margin-bottom: 0;
       > a {
-        color: #999;
+        color: #bbb;
         display: block;
         font-weight: bold;
         text-transform: uppercase;
-        padding: 40px 20px;
+        margin: 0;
+        padding: 30px 15px;
+        position: relative;
         .transition(color 0.05s linear);
         &:hover {
           background: none;
-          color: #333;
+          color: #fff;
           text-decoration: none;
         }
       }
       &.active {
         > a {
-          background-color: #fff;
-          color: #242628;
+          background-color: inherit;
+          color: #fff;
           font-weight: bold;
+          margin: 0;
           position: relative;
+          opacity: 1 !important;
           &:hover {
             background: none;
-            color: #242628;
-          }
-          &:after {
-            content: "";
-            position: absolute;
-            bottom: -10px;
-            z-index: 400;
-            left: 50%;
-            margin-left: -10px;
-            border-width: 10px 10px 0 10px;
-            border-style: solid;
-            border-color: #fff transparent;
-            display: block;
-            width: 0;
+            color: #fff;
           }
         }
       }
@@ -144,30 +205,19 @@ blockquote {
 }
 
 .site-header {
-  //or: #eee;
-  //background-color: #0693cf;
-  //color: #fff;
-  //color: #cdbfe3;
-  //color: inherit;
-  font-size: 16px;
-  //font-size: 21px;
-  margin: 0 0 30px;
-  padding: 30px;
-  padding: 30px 15px 40px;
-  text-align: left;
-  //text-shadow: 0 1px 0 rgba(0,0,0,.15);
-  h1 {
-    //color: #fff;
-    //font-size: 48px;
-    line-height: 1;
+  background: url('/img/imperial.jpg');
+  background-position: 50% 0;
+  color: #ffffff;
+  padding-top: 150px;
+  > .container {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: 970px;
+    padding-bottom: 50px;
   }
-  p {
-    font-weight: 300;
-    line-height: 1.5;
-  }
-  @media screen and (min-width: 768px) {
-    padding-top: 48px;
-    padding-bottom: 48px;
+  .search {
+    background-color: rgba(0,0,0, 0.25);
+    padding: 10px;
   }
 }
 
@@ -199,62 +249,20 @@ blockquote {
   }
 }
 
-.site-sidebar.affix {
-  position: fixed;
-  /* Large desktops and up */
-  @media screen and (min-width: 1200px) {
-    /* Widen the fixed sidebar again */
-    width: 370px;
-  }
-}
-
-.site-sidenav {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-shadow: 0 1px 0 #fff;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-}
-
-.site-sidebar {
-  .nav {
-    > li > a {
-      display: block;
-      color: #666;
-      padding: 4px 20px;
-      &:hover,
-      &:focus {
-        text-decoration: none;
-        border-left: 1px solid #d5d5d5;
-      }
-    }
-    > .active > a,
-    > .active:hover > a,
-    > .active:focus > a {
-      font-weight: 500;
-      color: #2a6496;
-      background-color: transparent;
-      border-left: 1px solid #2a6496;
-    }
-  }
-}
-
 .site-content {
-  > section {
-    border-top: 1px solid #f1f1f1;
-    .container-fixed();
+  > .container {
     margin-bottom: 10px;
     margin-top: 10px;
     max-width: 970px;
-    padding-bottom: 40px;
-    padding-top: 40px;
-    //.make-md-column(12);
-  }
+    padding-bottom: 20px;
+    padding-top: 20px;
 
-  > aside {
-    //.make-md-column(4);
+    > section {
+      margin-bottom: 10px;
+      margin-top: 10px;
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
   }
 }
 

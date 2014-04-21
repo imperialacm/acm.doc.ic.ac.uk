@@ -3,31 +3,32 @@ extends layout
 block prepend title
   | #{page.title + " - "}
 
+block header
+  h1= page.title
+  p.lead
+    | Student workshop driven by the "organised by students for students" ethos.
+
 block content
-  section
-    h1= page.title
-    p.lead Student workshop driven by the "organised by students for students" ethos.
+  - var workshops = _.chain(contents.workshops._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().sortBy(function(item) {
+  -   return -item.date
+  - }).value()
 
-    - var workshops = _.chain(contents.workshops._.directories).map(function(item) {
-    -   return item.index
-    - }).compact().sortBy(function(item) {
-    -   return -item.date
-    - }).value()
-
-    each workshop in workshops
-      article.event
-        header
-          p.date
-            span= moment.utc(workshop.metadata.from).format('MMM Do, YYYY')
-            |  &ndash; 
-            span= moment.utc(workshop.metadata.to).format('MMM Do, YYYY')
-            |  at Department of Computing, Imperial College London  
-            = workshop.metadata.room
-          h2
-            a(href=workshop.metadata.homepage)= workshop.title
-        section.content
-          a.photo(href='#')
-            img.img-circle(src=workshop.metadata.photo, width=100)
-          !{ typogr(workshop.html).typogrify() }
-      .clearfix
-      hr
+  each workshop in workshops
+    article.event
+      header
+        p.date
+          span= moment.utc(workshop.metadata.from).format('MMM Do, YYYY')
+          |  &ndash; 
+          span= moment.utc(workshop.metadata.to).format('MMM Do, YYYY')
+          |  at Department of Computing, Imperial College London  
+          = workshop.metadata.room
+        h2
+          a(href=workshop.metadata.homepage)= workshop.title
+      section.content
+        a.photo(href='#')
+          img.img-circle(src=workshop.metadata.photo, width=100)
+        !{ typogr(workshop.html).typogrify() }
+    .clearfix
+    hr

@@ -32,34 +32,35 @@ html(lang='en')
       link(rel='publisher', href='http://plus.google.com/109158233053938515993')
       include includes/analytics
       +analytics('UA-45260420-1')
-  body(class=bodyclass, data-spy='scroll', data-target='.site-sidebar')
-    header.navbar.navbar-default.site-nav(role='navigation')
-      block header
-        .container
-          .navbar-header
-            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.nav-collapse')
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a.navbar-brand(href='/', title=locals.name)
-              img(alt=locals.description, src='/img/logo-alt.png', width='200px')
-          nav.pull-right.navbar-collapse.collapse.nav-collapse
-            include includes/menu
-            ul.nav.navbar-nav
-              +menu('News', '/news/')
-              //-li.dropdown
-                //-a.dropdown-toggle(href='#', data-toggle='dropdown') Seminars
-                  //-b.caret
-                //-ul.dropdown-menu
-                  //-li: a(href='/seminars/') Seminar
-                  //-li: a(href='/seminars/guidelines.html') Guidelines
-              +menu('Events', '/events/')
-              +menu('Seminars', '/seminars/')
-              +menu('Workshops', '/workshops/')
-              +menu('People', '/people/')
-            //+search('Search')(class='navbar-form navbar-right')
+  body(class=bodyclass)
+    .navbar.navbar-default.site-navbar(role='navigation')
+      block navigation
+        .site-navbar-affixed(data-spy='affix', data-offset-top='50')
+          .container
+            .navbar-inner
+              .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='.nav-collapse')
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+                a.navbar-brand(href='/', title=locals.name)
+                  img.img-responsive(alt=locals.description, src='/img/logo-inverse.png', width='162px')
+              nav.navbar-collapse.collapse.nav-collapse
+                include includes/menu
+                ul.nav.navbar-nav
+                  +menu('Home', '/')
+                  +menu('News', '/news/')
+                  +menu('Events', '/events/')
+                  +menu('Seminars', '/seminars/')
+                  +menu('Workshops', '/workshops/')
+                  +menu('People', '/people/')
+                  //+search('Search')(class='navbar-form navbar-right')
+    header.site-header
+      .container
+        block header
     .site-content
-      block content
+      .container
+        block content
     footer.site-footer(role='contentinfo')
       block footer
         .container.content

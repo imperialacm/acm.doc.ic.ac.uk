@@ -7,7 +7,8 @@ mixin search(title)
     input(name='cx', type='hidden', value='003181222941417911505:gkvhcekze7e')
     input(name='ie', type='hidden', value='FORID:10')
     input(name='ie', type='hidden', value='UTF-8')
-    .form-group
+    .input-group
       input#cse-search-input-box-id.form-control.search-query(name='q', type='text')
-    button.btn.btn-default(name='sa', type='submit', value=title)
-      span.glyphicon.glyphicon-search
+      span.input-group-btn
+        button.btn.btn-default(name='sa', type='submit', value=title)
+          span.glyphicon.glyphicon-search
