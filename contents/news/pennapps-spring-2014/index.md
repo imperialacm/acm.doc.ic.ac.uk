@@ -1,6 +1,6 @@
 ---
 title: Sign up for PennApps Spring 2014
-date: 11/26/2011 9:00
+date: 11/26/2013 9:00
 template: article.jade
 ---
 PennApps is the top college hackathon in the world. PennApps Fall 2013

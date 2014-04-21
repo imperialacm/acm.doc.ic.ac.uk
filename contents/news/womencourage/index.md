@@ -1,6 +1,6 @@
 ---
 title: "Call for Posters: womEncourage"
-date: 10/31/2011 9:00
+date: 10/31/2013 9:00
 template: article.jade
 ---
 ACM-W Europe, the Association for Computing Machinery's Committee on
