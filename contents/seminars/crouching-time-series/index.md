@@ -16,3 +16,7 @@ findings of the AESOP group (aesop.doc.ic.ac.uk/) over the last few
 years and mention possible future research.
 
 <span class="more"></span>
+
+<script async class="speakerdeck-embed"
+data-id="4e5411e0ac8f013151914a996f9256bf" data-ratio="1.33333333333333"
+src="//speakerdeck.com/assets/embed.js"></script>
