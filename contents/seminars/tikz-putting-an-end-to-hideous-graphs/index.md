@@ -8,7 +8,7 @@ template: seminar.jade
 LaTeX is one of the most widespread markup languages for writing
 scientific research papers. However, despite using it frequently, most
 users only resort to a fraction of tools and packages that LaTeX has to
-offer. I I personally found that in particular with respect to graph and
+offer. I personally found that in particular with respect to graph and
 table plotting, many users appear to prefer generating figures outside
 LaTeX, even though LaTeX offers excellent tools for doing so. Similarly
 many plots that I see in research papers were not created natively in
