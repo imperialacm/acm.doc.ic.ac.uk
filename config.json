@@ -11,6 +11,7 @@
     "wintersmith-less"
   ],
   "require": {
+    "marked": "marked",
     "moment": "moment",
     "_": "underscore",
     "typogr": "typogr"
