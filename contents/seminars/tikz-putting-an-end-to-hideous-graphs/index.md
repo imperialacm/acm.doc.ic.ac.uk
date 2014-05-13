@@ -26,6 +26,6 @@ workflow.
 
 <span class="more"></span>
 
-<iframe width="560" height="315"
+<iframe class="center-block" width="560" height="315"
 src="//www.youtube.com/embed/ZoofLe02To0" frameborder="0"
 allowfullscreen></iframe>
