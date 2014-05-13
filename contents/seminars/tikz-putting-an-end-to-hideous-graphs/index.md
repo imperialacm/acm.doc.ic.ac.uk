@@ -26,5 +26,6 @@ workflow.
 
 <span class="more"></span>
 
-_NOTE: Basic LaTeX knowledge is expected (if you ever created a
-TeX document from scratch that’ll be enough to follow the talk)._
+<iframe width="560" height="315"
+src="//www.youtube.com/embed/ZoofLe02To0" frameborder="0"
+allowfullscreen></iframe>
