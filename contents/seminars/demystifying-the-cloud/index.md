@@ -11,7 +11,7 @@ help them in their work. In this tutorial, I will try to uncover part of
 the mystery and show you what the cloud really is. Contrary to some of
 the popular beliefs, I will try to convince you that the cloud is not
 something you have to be afraid of; rather opposite, combined with the
-right tooling, it can really benefit your workflow. Furthemore, I will
+right tooling, it can really benefit your workflow. Furthermore, I will
 show you how to use tools such as Vagrant or Packer to make an order in
 your virtual machines and how to use them to harness the power of the
 departmental cloud, so the next time, when you need to run a massive
