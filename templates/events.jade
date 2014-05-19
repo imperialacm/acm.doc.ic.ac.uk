@@ -21,7 +21,7 @@ block content
       article.event
         header
           p.date
-            span= moment.utc(event.metadata.date).format('MMM Do, YYYY, h:mm a')
+            span= moment(event.metadata.date).format('MMM Do, YYYY, h:mm a')
             |  in  
             = event.metadata.room
           h2

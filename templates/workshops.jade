@@ -19,9 +19,9 @@ block content
     article.event
       header
         p.date
-          span= moment.utc(workshop.metadata.from).format('MMM Do, YYYY')
+          span= moment(workshop.metadata.from).format('MMM Do, YYYY')
           |  &ndash; 
-          span= moment.utc(workshop.metadata.to).format('MMM Do, YYYY')
+          span= moment(workshop.metadata.to).format('MMM Do, YYYY')
           |  at Department of Computing, Imperial College London  
           = workshop.metadata.room
         h2

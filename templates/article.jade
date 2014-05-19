@@ -10,7 +10,7 @@ block content
   article.article
     header
       p.date
-        span= moment.utc(page.metadata.date).format('MMM Do, YYYY, h:mm a')
+        span= moment(page.metadata.date).format('MMM Do, YYYY, h:mm a')
       h2
         a(href=page.url)= page.title
     section.content!= typogr(page.html).typogrify()

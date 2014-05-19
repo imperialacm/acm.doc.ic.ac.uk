@@ -10,7 +10,7 @@ block content
   article.event
     header
       p.date
-        span= moment.utc(page.metadata.date).format('MMM Do, YYYY, h:mm a')
+        span= moment(page.metadata.date).format('MMM Do, YYYY, h:mm a')
         |  in  
         = page.metadata.room
       h2
