@@ -1,0 +1,8 @@
+extends layout
+
+block header
+  h1= page.title
+  p.lead= page.metadata.lead
+
+block content
+  !{ typogr(page.html).typogrify() }
