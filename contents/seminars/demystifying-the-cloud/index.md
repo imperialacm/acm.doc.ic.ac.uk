@@ -17,3 +17,9 @@ your virtual machines and how to use them to harness the power of the
 departmental cloud, so the next time, when you need to run a massive
 computational job just a few days before your paper deadline, you will
 know what to do.
+
+<span class="more"></span>
+
+<iframe class="center-block" width="560" height="315"
+src="//www.youtube.com/embed/lwzeArBmvfI" frameborder="0"
+allowfullscreen></iframe>
