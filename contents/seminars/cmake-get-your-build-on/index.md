@@ -16,3 +16,9 @@ will show you how to write a build system for your project that includes
 handling external libraries, generating documentation (doxygen), unit
 testing (GoogleTest framework) and more. I will try to do this as an
 interactive tutorial so feel free to bring your laptop and follow along.
+
+<span class="more"></span>
+
+<iframe class="center-block" width="560" height="315"
+src="//www.youtube.com/embed/6zOpxAwYKUQ" frameborder="0"
+allowfullscreen></iframe>
