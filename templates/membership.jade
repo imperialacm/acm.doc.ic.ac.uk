@@ -1,0 +1,23 @@
+extends layout
+
+block header
+  h1= page.title
+  p.lead= page.metadata.lead
+
+block content
+  !{ typogr(page.html).typogrify() }
+
+  .row
+    .col-lg-6
+      form(action='/membership-form.php', method='post', name='membership-form', role='form')
+        .row
+          .form-group.col-md-6
+            label(for='input-firstname') First name
+            input#input-firstname.form-control(type='text', name='firstname', maxlength=100)
+          .form-group.col-md-6
+            label(for='input-lastname') Last name
+            input#input-lastname.form-control(type='text', name='lastname', maxlength=100)
+        .form-group
+          label(for='input-email') Email address
+          input#input-email.form-control(type='email', name='email')
+        button.btn.btn-default(type='submit') Submit
