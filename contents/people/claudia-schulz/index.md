@@ -5,6 +5,7 @@ order: 1
 email: claudia.schulz@imperial.ac.uk
 photo: /img/people/claudia.jpg
 template: person.jade
+website: http://www.doc.ic.ac.uk/~cis11/
 ---
 Claudia is a second year PhD student working in the field of knowledge
 representation and reasoning, where her particular focus is on

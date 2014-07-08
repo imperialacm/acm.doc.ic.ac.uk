@@ -6,6 +6,7 @@ email: a.wolf@imperial.ac.uk
 photo: /img/people/alexander-wolf.jpg
 hidden: yes
 template: person.jade
+website: http://www.doc.ic.ac.uk/~alw/
 ---
 Alexander L. Wolf is a professor in the Department of Computing at
 Imperial College London (UK). Prof. Wolf received the B.A. degree from
