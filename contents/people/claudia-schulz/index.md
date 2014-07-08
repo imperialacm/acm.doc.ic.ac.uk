@@ -7,7 +7,7 @@ photo: /img/people/claudia.jpg
 template: person.jade
 website: http://www.doc.ic.ac.uk/~cis11/
 ---
-Claudia is a second year PhD student working in the field of knowledge
+Claudia is a third year PhD student working in the field of knowledge
 representation and reasoning, where her particular focus is on
 Argumentation Theory. As a Teaching Scholar in the Department of
 Computing, she is gaining teaching experience of all kinds: tutoring,
