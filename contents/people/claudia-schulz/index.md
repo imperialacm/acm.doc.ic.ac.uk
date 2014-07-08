@@ -1,7 +1,7 @@
 ---
 name: Claudia Schulz
-position: Treasurer
-order: 3
+position: Chair
+order: 1
 email: claudia.schulz@imperial.ac.uk
 photo: /img/people/claudia.jpg
 template: person.jade

@@ -3,7 +3,7 @@ name: Alexander L. Wolf
 position: Faculty Sponsor
 order: 7
 email: a.wolf@imperial.ac.uk
-photo: /img/people/alex.jpg
+photo: /img/people/alexander-wolf.jpg
 hidden: yes
 template: person.jade
 ---

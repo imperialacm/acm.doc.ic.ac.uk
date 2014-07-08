@@ -1,0 +1,16 @@
+---
+name: Silvia Mora
+position: Treasurer
+order: 3
+email: silvia.vinyes-mora12@imperial.ac.uk
+photo: /img/people/silvia-mora.jpg
+template: person.jade
+---
+Silvia is a first year PhD student in the AESOP (Analysis,
+Engineering, Simulation & Optimization of Performance) group doing
+research under the supervision of William Knottenbelt. She works on
+video-based analysis of professional tennis matches. Previously, she
+pursued a BSc in Neuroscience at King's College London and an MSc in
+Computing Science at Imperial College London, where she was the Course
+Representative. In her free time she enjoys playing piano and
+traveling.
