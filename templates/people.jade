@@ -38,7 +38,9 @@ block content
     p.lead
       | Students of Imperial College London contributing to make a difference.
     .row
-      each member in members
+      each member,index in members
+        if index % 6 == 0
+          .div.clearfix.visible-lg-block
         .col-lg-2
           .people
             a(href=member.metadata.website != null ? member.metadata.website : '#')
