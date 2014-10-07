@@ -4,7 +4,7 @@ date: 10/07/2014 9:00
 template: article.jade
 ---
 <img src="/news/europe-chapter-workshop-2014/group_photo.jpg"
-     class="img-thumbnail" alt="Participants of the 2nd ACM Europe Chapter Workshop"
+     class="img-thumbnail center-block" alt="Participants of the 2nd ACM Europe Chapter Workshop"
 >
 <p class="text-center">
   <b>Participants of the 2nd ACM Europe Chapter Workshop</b>
@@ -49,7 +49,7 @@ Both types of sessions provided the two representatives of the Student Chapter
 with many **new ideas** for improving the Imperial College ACM Student Chapter.
 
 <img src="/news/europe-chapter-workshop-2014/ImperialCollege.jpg"
-     class="img-thumbnail" alt="Presenting the Imperial College London ACM
+     class="img-thumbnail center-block" alt="Presenting the Imperial College London ACM
                                 Student Workshop to ACM-Europe"
 >
 <p class="text-center">
@@ -62,7 +62,7 @@ them with many new ideas and a lot of motivation, both of which they are now
 spreading in the Student Chapter.
 
 <img src="/news/europe-chapter-workshop-2014/breakout_session.jpg"
-     class="img-thumbnail" alt="Creating new ideas during a working group session"
+     class="img-thumbnail center-block" alt="Creating new ideas during a working group session"
 >
 <p class="text-center">
   <b>Creating new ideas during a working group session</b>
