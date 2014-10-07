@@ -1,6 +1,6 @@
 ---
 title: End of ACM year pub evening
-date: 11/7/2014 18:30
+date: 7/11/2014 18:30
 room: HBar (Imperial College London, Sherfield Building)
 template: event.jade
 ---
