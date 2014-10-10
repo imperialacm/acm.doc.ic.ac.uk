@@ -1,6 +1,6 @@
 ---
 title: Introduction to Seminars
-date: 10/13/2014 18:00
+date: 10/13/2014 13:00
 room: 145 Huxley
 template: event.jade
 author:
