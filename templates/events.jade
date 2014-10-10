@@ -1,5 +1,22 @@
 extends layout
 
+mixin author(authorName)
+  - var author = contents.authors[authorName + '.json']
+  .author
+    a.photo(href='#')
+      img.img-circle(src=author.metadata.photo, width=100)
+    p
+      span.author-name
+        if author
+          a(href='mailto:'+author.metadata.email)= author.metadata.name
+        else
+          =authorName
+      | &nbsp;
+      = author.metadata.bio
+      | &nbsp;
+      a(href=author.metadata.homepage) More about me→
+  .clearfix
+
 block prepend title
   | #{page.title} - 
 
@@ -40,10 +57,21 @@ block content
             |  in  
             = event.metadata.room
           h2
-            a(href=event.url)= event.title
+            a(href=event.url)
+            if event.metadata.author != null
+              | [Seminar] 
+            = event.title
         section.content
           !{ typogr(event.intro).typogrify() }
           a(href=event.url + '#disqus_thread', data-disqus-identifier=event.url) Link
+          // Consider the event to be a seminar if author is defined in the metadata
+          if event.metadata.author != null
+            .meta
+              if event.metadata.author instanceof Array
+                each author in event.metadata.author
+                  +author(author)
+              else
+                +author(event.metadata.author)
       .clearfix
 
   p.back
