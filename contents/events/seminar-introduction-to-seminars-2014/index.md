@@ -3,6 +3,9 @@ title: Introduction to Seminars
 date: 10/13/2014 18:00
 room: 145 Huxley
 template: event.jade
+author:
+  - claudia-schulz
+  - alexander-wolf
 ---
 This introductory seminar provides more information about the ACM (Association
 for Computing Machinery) in general, as well as about the ACM Student Chapter
