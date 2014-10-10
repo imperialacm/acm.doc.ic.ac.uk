@@ -44,23 +44,6 @@ urlset(
       changefreq weekly
       priority 1.0
   url
-    loc= locals.url + "/seminars/"
-    lastmod= buildDate
-    changefreq weekly
-    priority 1.0
-  - var seminars = _.chain(contents.seminars._.directories).map(function(item) {
-  -   return item.index
-  - }).compact().sortBy(function(item) {
-  -   return -item.date
-  - }).value()
-  each seminar in seminars
-    - var permalink = locals.url + seminar.url
-    url
-      loc= permalink
-      lastmod= buildDate
-      changefreq weekly
-      priority 1.0
-  url
     loc= locals.url + "/workshops/"
     lastmod= buildDate
     changefreq weekly
