@@ -3,8 +3,9 @@ Imperial College London ACM Student Chapter website
 
 The website is statically generated using [Wintersmith](http://wintersmith.io/).
 
-Webpages are written using [Jade](http://jade-lang.com/) templates which are populated with information
-from markdown (``.md``) or JSON files (``.json``).
+Webpages are written using [Jade](http://jade-lang.com/) templates (``.jade``)
+which are populated with information from markdown (``.md``) or JSON files
+(``.json``).
 
 Installing dependencies
 -----------------------
