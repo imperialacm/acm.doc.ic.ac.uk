@@ -63,6 +63,11 @@ block content
             = event.title
         section.content
           !{ typogr(event.intro).typogrify() }
+          if event.hasMore
+            p
+              a(href=event.url)
+               | Read more→
+
           a(href=event.url + '#disqus_thread', data-disqus-identifier=event.url) Link
           // Consider the event to be a seminar if author is defined in the metadata
           if event.metadata.author != null
