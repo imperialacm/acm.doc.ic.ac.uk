@@ -16,6 +16,7 @@
     "typogr": "0.6.x"
   },
   "devDependencies": {
+    "grunt-cli": "~0.1.13",
     "grunt": "~0.4.2",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-cssmin": "~0.7.0",
