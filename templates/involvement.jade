@@ -1,0 +1,56 @@
+extends layout
+
+block prepend title
+  | #{page.title} - 
+
+block header
+  h1 How to get involed
+  p.lead
+    | Short guides on how to use services used by the chapter
+
+block content
+  - var aspects = _.chain(contents.involvement._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().sortBy(function(item) {
+  -   return item.metadata.order
+  - }).value()
+
+  :markdown
+    The ACM Student Chapter uses different resources to share files, get in
+    contact with each other, and organize tasks. In order to become a part
+    of the organizing committee you need to have access to these sources and
+    understand how to use them.
+
+    What you will have to do:
+
+    1. Send us your Imperial College login name and
+    Imperial email address.
+    1. Send us your Gmail address (or if you don’t
+    have one let us know and we’ll use your Imperial email).
+    1. Create a Trello profile. We would prefer if you use your gmail account to login to Trello.
+    1. Keep up to date with the Student Chapter’s events by regularly checking our
+    calendar, or simply by importing it into your Google Calendar.
+    1. Send us a profile photo picture of yourself (if you haven’t done so yet).
+
+    What we will do for you:
+    1. Add you to the shared Google Drive folder
+    (Gmail).
+    1. Add you to the acm-discuss mailing list (Imperial email).
+    1. Add you to the Trello group (Trello login).
+    1. Add your Imperial College login name to the “acm” group to give you access to the shared folder
+    /vol/acm/ (Imperial login).
+    1. Add your profile photo as a “contributor” to our webpage.
+
+    Below you will find short guides on specific services that we use.
+
+  article
+    #accordian.panel-group
+      each aspect, index in aspects
+        .panel.panel-default
+          .panel-heading
+            a(data-toggle="collapse", data-parent="#accordian", href="#article" + index)
+              span.glyphicon.glyphicon-plus
+              = aspect.title
+          div(id="article" + index).collapse
+            .panel-body
+              !{ typogr(aspect.html).typogrify() }
