@@ -16,7 +16,7 @@ template: involvement-item.jade
 
 ## Other social networks
 
-These accounts are register but currently are not utilised much.
+These accounts are registered but currently are not utilised much.
 
 * <span class="ss-icon ss-twitter"></span> [Twitter](https://twitter.com/imperialacm)
 
