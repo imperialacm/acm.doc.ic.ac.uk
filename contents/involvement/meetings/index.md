@@ -9,4 +9,4 @@ For example, go for a coffee or for lunch to update each other about your progre
 
 There are also monthly meetings for the whole ACM Student Chapter organizing committee to update everyone about the current activities of the Chapter.
 
-Meeting dates are used organised using [Doodle](https://doodle.com/)
+Meeting dates are usually organised using [Doodle](https://doodle.com/)
