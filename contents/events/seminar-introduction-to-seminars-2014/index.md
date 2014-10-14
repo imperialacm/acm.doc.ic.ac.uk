@@ -19,3 +19,10 @@ join this first Seminar to talk about the ACM as well as his work.
 This first Seminar will also be the perfect opportunity to ask questions about
 the ACM Student Chapter, to suggest events that you would like to see
 happening, and to find out more about how to get involved.
+
+<span class="more"></span>
+<script async class="speakerdeck-embed"
+        data-id="297afdc035b10132837076f0778b45f1"
+        data-ratio="1.33333333333333"
+        src="//speakerdeck.com/assets/embed.js">
+</script>
