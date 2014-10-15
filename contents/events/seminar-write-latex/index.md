@@ -1,7 +1,7 @@
 ---
 title: "WriteLaTeX: Lessons from Building a Scientific Startup"
 date: 10/27/2014 13:00
-author: josh-lees-miller
+author: john-lees-miller
 room: Huxley 145
 template: event.jade
 ---
