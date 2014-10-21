@@ -9,7 +9,7 @@ Parallel programming is notoriously difficult. Years of research had led
 to a plethora of models and languages for parallel programming, yet the
 majority of the scientific computing community is stuck with
 Message-Passing Interface, a standard designed 20 years ago. MPI is
-known for its robustness but not for its user-friendless, and
+known for its robustness but not for its user-friendliness, and
 communication errors are often hidden in plain sight. Session Types is a
 formal system that uses types to abstract interaction patterns and
 making sure message-passing communication do not go wrong, combining
