@@ -16,7 +16,16 @@ Here is how:
 
 
 ## Outlook.com
-TODO
+
+1. Go to your calendar and click on "Import" in the top left corner.
+1. Select the subscribe pane.
+1. Copy ``https://www.google.com/calendar/ical/r60dppokqfbu5jgakr0bqlrt0s%40group.calendar.google.com/public/basic.ics`` into calendar URL.
+1. Name your calendar, select calendar colour and press "subscribe".
 
 ## Outlook
-TODO
+
+1. In Outlook, click ``File > Account Settings > Account Settings``.
+1. Go to the "Internet Calendars" tab, click "New".
+1. Paste ``https://www.google.com/calendar/ical/r60dppokqfbu5jgakr0bqlrt0s%40group.calendar.google.com/public/basic.ics``
+   into "New Internet Calendar Subscription" and press "Add".
+1. In the "Subscription Options", name your calendar and press "OK".
