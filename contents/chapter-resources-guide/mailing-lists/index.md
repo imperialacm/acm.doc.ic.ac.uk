@@ -1,7 +1,7 @@
 ---
 title: Mailing Lists
 order: 2
-template: involvement-item.jade
+template: chapter-resources-guide-item.jade
 ---
 
 All mailing lists end in ``@imperial.ac.uk``.

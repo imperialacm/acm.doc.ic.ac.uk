@@ -1,7 +1,7 @@
 ---
 title: Google Drive
 order: 0
-template: involvement-item.jade
+template: chapter-resources-guide-item.jade
 ---
 
 We will add your Gmail (or Imperial) email to our shared Google Drive folder.

@@ -1,7 +1,7 @@
 ---
 title: Trello
 order: 6
-template: involvement-item.jade
+template: chapter-resources-guide-item.jade
 ---
 
 We use Trello to gain a good overview of current tasks that need doing are being completed.

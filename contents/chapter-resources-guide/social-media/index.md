@@ -1,7 +1,7 @@
 ---
 title: Social Media
 order: 5
-template: involvement-item.jade
+template: chapter-resources-guide-item.jade
 ---
 
 ## Active

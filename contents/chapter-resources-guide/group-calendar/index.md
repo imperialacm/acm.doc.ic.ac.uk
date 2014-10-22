@@ -1,7 +1,7 @@
 ---
 title: Group Calendar
 order: 1
-template: involvement-item.jade
+template: chapter-resources-guide-item.jade
 ---
 You can now easily subscribe to the ACM Student Chapter Google Calendar to track our events through your calendars.
 Note: Please don’t create events in this calendar under your name. We will use the acm-gmail account to create events.

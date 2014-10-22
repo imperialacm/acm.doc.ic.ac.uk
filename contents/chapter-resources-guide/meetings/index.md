@@ -1,7 +1,7 @@
 ---
 title: Meetings
 order: 3
-template: involvement-item.jade
+template: chapter-resources-guide-item.jade
 ---
 
 **Good practice:** Have as many small meetings with people you are sharing tasks with as possible.

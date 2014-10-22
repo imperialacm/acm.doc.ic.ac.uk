@@ -1,7 +1,7 @@
 ---
 title: NFS access
 order: 4
-template: involvement-item.jade
+template: chapter-resources-guide-item.jade
 ---
 We store some files on CSG's [NFS](https://en.wikipedia.org/wiki/Network_File_System)
 infrastructure.
