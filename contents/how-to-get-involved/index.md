@@ -19,6 +19,8 @@ have one let us know and we’ll use your Imperial email).
 1. Your Trello profile . We would prefer if you use your gmail account to login
 to Trello. If you don't want to do this you can set up a new Trello account and
 send us your username
+1. *(optional)* A photo of you to be used on your website (preferrably ``150x150px`` JPEG)
+1. *(optional)* A link to your personal website or LinkedIn profile.
 
 # What we will do for you
 
@@ -34,6 +36,5 @@ send us your username
 
 1. Keep up to date with the Student Chapter’s events by regularly checking our
 calendar, or simply by importing it into your Google Calendar.
-1. Send us a profile photo picture of yourself (if you haven’t done so yet).
 1. **Learn how to use the tools we use to run the chapter. You can read about
    them [in our Chapter Resources Guide](/chapter-resources-guide/)**
