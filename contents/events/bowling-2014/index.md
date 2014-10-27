@@ -1,6 +1,6 @@
 ---
 title: Bowling Social
-date: 10/30/2014 19:00
+date: 10/29/2014 19:00
 template: event.jade
 ---
 Our first social event of the year will be bowling at [Queens Ice and Bowl](http://www.queensiceandbowl.co.uk/).
