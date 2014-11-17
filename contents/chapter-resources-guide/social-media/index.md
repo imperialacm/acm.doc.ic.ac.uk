@@ -9,7 +9,7 @@ template: chapter-resources-guide-item.jade
 * ACM Digest
   Weekly newsletter about the ACM Student Chapter: Under Development
 
-* <span class="ss-icon ss-facebook"></span> [Facebook](https://www.facebook.com/imperialacm)
+* <span class="ss-icon ss-facebook"></span> [Facebook](https://www.facebook.com/groups/ImperialACM)
   All events will be on this facebook group. We also want to use this to create
   discussion & dialogue between students. Thus, if you know of any interesting
   hot topic, just ask a provocative question to start the discussion.
