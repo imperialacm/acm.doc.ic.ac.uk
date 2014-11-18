@@ -26,9 +26,18 @@ block header
     | Talks, tutorials, tours and visits, it is your call; let us know if you have an idea for an event.
 
 block content
-  - var events = _.chain(contents.events._.directories).map(function(item) {
+  - // The reduce is to handle the multiple year directories
+  - var seminarEvents = _.chain(contents.events.seminars._.directories).reduce( function (memo,v) {
+  -   return memo.concat(_.toArray(v))
+  -  }, [ ]).map( function(item) {
   -   return item.index
-  - }).compact().groupBy(function(item) {
+  - }).compact().value()
+  - // These are the other events, these only go one directory deep
+  - var otherEvents = _.chain(contents.events._.directories).map(function(item) {
+  -   return item.index
+  - }).compact().value()
+  - // Concat the events and create dictionary mapping year to lists of events
+  - var events = _.chain(seminarEvents.concat(otherEvents)).groupBy(function(item) {
   -   return item.date.getFullYear()
   - }).value()
   - var years = _.chain(events).keys().reverse().value()
