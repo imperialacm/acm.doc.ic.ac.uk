@@ -67,9 +67,9 @@ block content
             = event.metadata.room
           h2
             a(href=event.url)
-            if event.metadata.author != null
-              | [Seminar] 
-            = event.title
+              if event.metadata.author != null
+                | [Seminar] 
+              = event.title
         section.content
           !{ typogr(event.intro).typogrify() }
           if event.hasMore
