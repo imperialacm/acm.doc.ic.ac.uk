@@ -32,3 +32,8 @@ analyse data.
 The aim of this talk is to give a high-level introduction to the Zoo of systems
 that are out there to process big data and present some research directions we
 are pursuing in the [LSDS group](http://lsds.doc.ic.ac.uk/).
+
+
+<span class="more"></span>
+
+<iframe class="center-block" width="560" height="315" src="//www.youtube.com/embed/n0PL74zwaoM" frameborder="0" allowfullscreen></iframe>

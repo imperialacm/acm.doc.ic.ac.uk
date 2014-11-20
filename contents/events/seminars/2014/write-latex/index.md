@@ -14,3 +14,7 @@ startup story, and finally about some of the technical challenges we face in
 bringing a 30-year old technology (TeX) online and in scaling up (e.g. I'll
 mention Docker, Ruby on Rails, data protection, cloud services, and bugs, lots
 of bugs).
+
+<span class="more"></span>
+
+<iframe class="center-block" width="560" height="315" src="//www.youtube.com/embed/kYkN0Yv56bI" frameborder="0" allowfullscreen></iframe>
