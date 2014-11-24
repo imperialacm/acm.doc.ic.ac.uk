@@ -19,3 +19,23 @@ Lukas (IBM),
 Raul (LinkedIn),
 Lucas (Thomson Reuters) and
 [Luo](http://www.doc.ic.ac.uk/~lm111/) (Google).
+
+<span class="more"></span>
+
+## Content from companies
+
+### Google
+
+[See their website](http://www.google.com/about/careers/students/)
+
+### IBM
+
+<script async class="speakerdeck-embed" data-id="3256fb70560d013216380e87671be311" data-ratio="1.6" src="//speakerdeck.com/assets/embed.js"></script>
+
+### JP Morgan
+
+[See their website](http://careers.jpmorgan.com/student/jpmorgan/careers/europe/postgraduate/quant)
+
+### Thomson Reuters
+
+<script async class="speakerdeck-embed" data-id="8c40cf80560c0132cfcb22a801ec1e9e" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
