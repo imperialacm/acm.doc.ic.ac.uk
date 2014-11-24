@@ -18,3 +18,6 @@ Optimization where all planning and scheduling steps are tackled
 simultaneously, accounting for these interactions and resulting in an overall
 profit maximization.
 
+<span class="more"></span>
+
+<script async class="speakerdeck-embed" data-id="ce8e63b056010132b71f068d4fdc98ab" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
