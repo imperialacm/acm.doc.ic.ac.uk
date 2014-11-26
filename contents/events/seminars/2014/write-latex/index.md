@@ -17,4 +17,6 @@ of bugs).
 
 <span class="more"></span>
 
+<script async class="speakerdeck-embed" data-id="6b3496c057840132139e46caa769b8a6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 <iframe class="center-block" width="560" height="315" src="//www.youtube.com/embed/kYkN0Yv56bI" frameborder="0" allowfullscreen></iframe>
