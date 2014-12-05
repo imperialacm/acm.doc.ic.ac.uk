@@ -1,7 +1,9 @@
 ---
 title: "Meanwhile: How difficult is it to bring your favorite place live to your computer screen? The story of our tech startup."
 date: 12/08/2014 13:00
-author: zafeirios-fountas
+author:
+  - zafeirios-fountas
+  - felipe-teixeira
 room: Huxley 145
 template: event.jade
 ---
