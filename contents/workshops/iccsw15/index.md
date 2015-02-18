@@ -4,7 +4,7 @@ date: 09/24/2015 9:00
 from: 09/24/2015
 to: 09/25/2015
 homepage: http://iccsw.doc.ic.ac.uk/2015
-photo: /img/question_mark.png
+photo: /img/iccsw15.png
 template: workshop.jade
 ---
 Following the success of the previous four workshops the fifth workshop
