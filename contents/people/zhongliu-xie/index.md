@@ -1,7 +1,7 @@
 ---
 name: Zhongliu Xie
 position: Treasurer
-order: 5
+order: 3
 email: cloud.arkadia@gmail.com
 photo: /img/people/zhongliu.jpg
 template: person.jade
