@@ -7,7 +7,7 @@ photo: /img/people/daniel-liew.jpg
 template: person.jade
 website: http://www.doc.ic.ac.uk/~dsl11/
 ---
-Daniel Liew is a second year PhD student in the [Software Reliability
+Daniel Liew is a third year PhD student in the [Software Reliability
 group](http://srg.doc.ic.ac.uk/) and in the [Multicore Programming
 group](http://multicore.doc.ic.ac.uk/) Daniel‘s research interests include
 software verification using symbolic execution and static analysis. He received
