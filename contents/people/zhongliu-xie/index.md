@@ -1,6 +1,6 @@
 ---
 name: Zhongliu Xie
-position: Membership Chair
+position: Treasurer
 order: 5
 email: cloud.arkadia@gmail.com
 photo: /img/people/zhongliu.jpg
