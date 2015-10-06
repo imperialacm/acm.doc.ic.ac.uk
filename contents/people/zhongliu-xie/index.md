@@ -7,7 +7,7 @@ photo: /img/people/zhongliu.jpg
 template: person.jade
 website: http://www.doc.ic.ac.uk/~zx10/
 ---
-Zhongliu is a third year PhD student working on visual information processing
+Zhongliu is a final year PhD student working on visual information processing
 and pattern recognition, where he focuses on biomedical image analysis for
 morphological anomaly detection, with research under close collaborations with
 Japan National Institute of Informatics, National Institute of Genetics and
