@@ -1,7 +1,7 @@
 ---
 name: Pedro Martinez Mediano
-position: Vice Chair
-order: 2
+position: Secretary
+order: 4 
 email: pedro.martinez-mediano13@imperial.ac.uk
 photo: /img/people/pedro-mediano.jpg
 template: person.jade

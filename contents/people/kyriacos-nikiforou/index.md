@@ -1,7 +1,7 @@
 ---
 name: Kyriacos Nikiforou
-position: Chair
-order: 1
+position: Treasurer 
+order: 3
 email: kyriacos.nikiforou10@imperial.ac.uk
 photo: /img/people/kyriacos-nikiforou.jpg
 template: person.jade

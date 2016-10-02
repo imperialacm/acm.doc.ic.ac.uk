@@ -8,12 +8,13 @@
     "url": "https://github.com/imperialacm/acm.doc.ic.ac.uk.git"
   },
   "dependencies": {
-    "wintersmith-browserify": "*",
-    "wintersmith-less": "*",
     "browsernizr": "*",
     "moment": "2.3.x",
+    "run-wintersmith": "0.0.3",
+    "typogr": "0.6.x",
     "underscore": "1.5.x",
-    "typogr": "0.6.x"
+    "wintersmith-browserify": "*",
+    "wintersmith-less": "*"
   },
   "devDependencies": {
     "grunt-cli": "~0.1.13",
