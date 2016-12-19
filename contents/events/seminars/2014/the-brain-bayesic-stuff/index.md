@@ -26,7 +26,3 @@ essential for learning how the brain functions and how this knowledge
 can be used to create even more intelligent machines.
 
 <span class="more"></span>
-
-<script async class="speakerdeck-embed"
-data-id="455b35e0ab82013155723279fa910c9f" data-ratio="1.33333333333333"
-src="//speakerdeck.com/assets/embed.js"></script>
