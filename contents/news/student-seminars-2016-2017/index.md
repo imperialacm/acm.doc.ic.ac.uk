@@ -14,7 +14,7 @@ where PhD students from the department get the chance to present their project t
 This is a great chance to learn about the research that is being carried out in the department, so 
 join us every second Wednesday at 15:00 and we will provide great speakers as well as snacks!
 
-<img src="/news/student-seminars/ACM_Poster_student_seminars.jpg"
+<img src="/news/student-seminars-2016-2017/ACM_Poster_student_seminars.jpg"
      class="img-thumbnail center-block" alt="Student seminars 2016/17" width="400"
 >
 
