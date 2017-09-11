@@ -7,4 +7,4 @@ photo: /img/people/oana-cocarascu.jpg
 website: https://www.doc.ic.ac.uk/~oc511/
 template: person.jade
 ---
-She is 3rd year PhD student working at the intersection of Natural Language Processing & Machine Learning on Argument Mining and symbolic, argumentative reasoning.
+3rd year PhD student working at the intersection of Natural Language Processing & Machine Learning on Argument Mining and symbolic, argumentative reasoning.
