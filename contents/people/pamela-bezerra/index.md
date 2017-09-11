@@ -7,5 +7,5 @@ photo: /img/people/pamela-bezerra.jpg
 template: person.jade
 ---
 Hi, my name is Pamela and I'm a PhD student at Imperial.
-My background is in computer engineer and I'm currently working with IoT and wireless sensor networks.
+My background is in computer engineering and I'm currently working with IoT and wireless sensor networks.
 My research interest are sensors, communication protocol, energy optimization, SmartCities and IoT.
