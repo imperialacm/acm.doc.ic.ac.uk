@@ -1,31 +1,5 @@
 extends layout
 
-block subheader
-  - var events = _.chain(contents.news._.directories).map(function(item) {
-  -   return item.index
-  - }).compact().sortBy(function(item) {
-  -   return -item.date
-  - }).first(5).value()
-
-  #site-carousel.carousel.slide
-    ol.carousel-indicators
-      each event, index in events
-        li(data-target='#site-carousel', data-slide-to=index, class=index == 0 ? 'active' : '')
-
-    .carousel-inner
-      each event, index in events
-        .item(class=index == 0 ? 'active' : '')
-          img(src=event.metadata.photo, style='height: 500px; width: 100%; display: block;')
-          .carousel-caption
-            h1= event.title
-            !{ event.html }
-            p
-              a.btn.btn-large.btn-primary(href="#") Learn more
-    a.left.carousel-control(href='#site-carousel', data-slide='prev')
-      span.icon-prev
-    a.right.carousel-control(href='#site-carousel', data-slide='next')
-      span.icon-next
-
 block header
   h1 Be part of a community. Be a contributor.
   p.lead
