@@ -131,7 +131,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', [
     'prebuild',
-    'wintersmith:production',
     'postbuild'
   ]);
 

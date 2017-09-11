@@ -6,7 +6,6 @@
     "description": "Imperial College London ACM Student Chapter"
   },
   "plugins": [
-    "./plugins/paginator.coffee",
     "wintersmith-browserify",
     "wintersmith-less"
   ],
@@ -22,8 +21,5 @@
   "markdown": {
     "smartLists": true,
     "smartypants": true
-  },
-  "paginator": {
-    "perPage": 5
   }
 }
