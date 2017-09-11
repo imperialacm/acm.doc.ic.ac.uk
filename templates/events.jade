@@ -42,21 +42,6 @@ block content
   - }).value()
   - var years = _.chain(events).keys().reverse().value()
 
-  h1
-    | Google calendar
-  | Our calendar is available in multiple ways.
-  ul
-    li
-      a(data-toggle="collapse", data-target="#gcalwidget", href="#") Google Calendar widget
-      div.collapse#gcalwidget
-        iframe(src="https://www.google.com/calendar/embed?height=600&wkst=2&hl=en_GB&bgcolor=%23FFFFFF&src=imperialacm%40gmail.com&color=%23A32929&ctz=Europe%2FLondon",
-               style="border-width:0", width="800", height="600", frameborder="0", scrolling="no")
-    li
-      | Import our calendar into your Google calendar. Click the arrow next to "Other calendars"
-      | then choose "Add by URL". Use the following URL
-      code
-        | https://www.google.com/calendar/feeds/imperialacm%40gmail.com/public/basic
-
   each year in years
     each event in _.sortBy(events[year], function(item) { return -item.date })
       article.event
