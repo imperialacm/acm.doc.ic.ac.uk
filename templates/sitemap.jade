@@ -14,7 +14,7 @@ urlset(
     lastmod= buildDate
     changefreq weekly
     priority 1.0
-  - var events = _.chain(contents.events._.directories).map(function(item) {
+  - var events = _.chain(contents.eventsnews._.directories).map(function(item) {
   -   return item.index
   - }).compact().sortBy(function(item) {
   -   return -item.date
