@@ -57,11 +57,11 @@ Maintain and Edit
 -----------------
 #### Events/News
 
-Each event or new should be seperate files except seminars, which are grouped by the years.
-For those who use markdown, the template is as the follows:
+Each event or new is in seperate directory except seminars, which are grouped by the years, and all of them are under ```eventsnews``` directory.
+For those who use markdown, the template for ```index.md``` is as the follows:
 ```markdown
 ---
-title: 
+title: title 
 date: MM/DD/YYYY HH/MIN
 template: event.jade
 ---
@@ -72,7 +72,28 @@ The main body that shows up as intro.
 The rest.
 ```
 Note that month is at the beginning followed by date in the ``date`` field.
-The ```<span class="more"></span>``` is used to splite the main body, above which will be considered as intro and will show up in the Events/News page.
+The ```<span class="more"></span>``` is used to split the main body, above which will be considered as intro and will show up in the Events/News page.
+It is recommended to include all other resources, for example images, within the same directory.
+
+#### People
+There are two parts under ```people``` directory, current officers of the chapter and honourable members.
+Each current officer is in in separate directory.
+For those who use markdown, the template for ```index.md``` is as the follows:
+```markdown
+---
+name: name
+position: position
+order: 1
+email: email
+photo: photo-file-name
+website: website
+template: person.jade
+---
+Short intro.
+```
+The ```order``` decides the order in the ```People``` page.
+All the photos MUST be saved in ```/img/people/``` directory.
+ONLY PUT the file name in the ```photo``` field but no path is needed.
 
 
 
