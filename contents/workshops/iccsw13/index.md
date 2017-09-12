@@ -4,8 +4,7 @@ date: 09/26/2013 9:00
 from: 09/26/2013
 to: 09/27/2013
 homepage: http://iccsw.doc.ic.ac.uk/2013
-photo: /img/iccsw13.png
-template: workshop.jade
+photo: iccsw13.png
 ---
 Following the success of the first two editions of the
 workshop—ICCSW'12 and ICCSW'11—the third workshop provided an excellent
