@@ -58,6 +58,22 @@ Maintain and Edit
 #### Events/News
 
 Each event or new should be seperate files except seminars, which are grouped by the years.
+For those who use markdown, the template is as the follows:
+```markdown
+---
+title: 
+date: MM/DD/YYYY HH/MIN
+template: event.jade
+---
+The main body that shows up as intro.
+
+<span class="more"></span>
+
+The rest.
+```
+Note that month is at the beginning followed by date in the ``date`` field.
+The ```<span class="more"></span>``` is used to splite the main body, above which will be considered as intro and will show up in the Events/News page.
+
 
 
 MIT License
