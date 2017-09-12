@@ -17,23 +17,15 @@ mixin author(authorName)
       a(href=author.metadata.homepage) More about me→
   .clearfix
 
-block prepend title
-  | #{page.title} - 
-
-block header
-  h1 Events
-  p.lead
-    | Talks, tutorials, tours and visits, it is your call; let us know if you have an idea for an event.
-
 block content
   - // The reduce is to handle the multiple year directories
-  - var seminarEvents = _.chain(contents.events.seminars._.directories).reduce( function (memo,v) {
+  - var seminarEvents = _.chain(contents.eventsnews.seminars._.directories).reduce( function (memo,v) {
   -   return memo.concat(_.toArray(v))
   -  }, [ ]).map( function(item) {
   -   return item.index
   - }).compact().value()
   - // These are the other events, these only go one directory deep
-  - var otherEvents = _.chain(contents.events._.directories).map(function(item) {
+  - var otherEvents = _.chain(contents.eventsnews._.directories).map(function(item) {
   -   return item.index
   - }).compact().value()
   - // Concat the events and create dictionary mapping year to lists of events

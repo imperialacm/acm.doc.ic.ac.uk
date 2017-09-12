@@ -1,13 +1,5 @@
 extends layout
 
-block prepend title
-  | #{page.title} - 
-
-block header
-  h1 People
-  p.lead
-    | Whenever you have something to say, just talk to us, we are here for you.
-
 block content
   - var people = _.chain(contents.people._.directories).map(function(item) {
   -   return item.index
@@ -19,7 +11,7 @@ block content
     article.event
       header
         a.photo(href=person.metadata.website != null ? person.metadata.website : '#')
-          img.img-circle(src=person.metadata.photo, width=100)
+          img.img-circle(src='/img/people/' + person.metadata.photo, width=100)
         h2= person.metadata.name
           | 
           span.text-muted= person.metadata.position
@@ -31,8 +23,6 @@ block content
   - }).sortBy(function(item) {
   -   return item.metadata.name
   - }).value()
-
-// this part previous member 
 
   section.team
     h2 Members 
@@ -46,5 +36,5 @@ block content
         .col-lg-2
           .people
             a(href=member.metadata.website != null ? member.metadata.website : '#')
-              img.thumb.img-circle(src='/img/' + member.filename.replace(/(.+)\.[^.]+$/, '$1') + '.jpg', width=100)
+              img.thumb.img-circle(src='/img/people/' + member.metadata.photo, width=100)
             h4= member.metadata.name

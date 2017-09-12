@@ -20,9 +20,6 @@ mixin author(authorName)
 block append vars
   - bodyclass = 'event-detail'
 
-block prepend title
-  | #{page.title + " - "}
-
 block content
   article.event
     header

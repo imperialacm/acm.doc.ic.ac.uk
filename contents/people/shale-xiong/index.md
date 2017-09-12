@@ -3,7 +3,7 @@ name: Shale Xiong
 position: Webmaster
 order: 6 
 email: garnelo@imperial.ac.uk
-photo: /img/people/shale-xiong.jpg
+photo: shale-xiong.jpg
 website: https://www.doc.ic.ac.uk/~sx14/
 template: person.jade
 ---

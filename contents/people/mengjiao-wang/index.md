@@ -3,7 +3,7 @@ name: Mengjiao Wang
 position: Treasurer 
 order: 3
 email: m.wang15@imperial.ac.uk
-photo: /img/people/mengjiao-wang.jpg
+photo: mengjiao-wang.jpg
 website: https://ibug.doc.ic.ac.uk/people/mwang
 template: person.jade
 ---

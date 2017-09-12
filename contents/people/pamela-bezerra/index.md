@@ -3,7 +3,7 @@ name: Pamela Bezerra
 position: Vice Chair
 order: 2
 email: p.lins-bezerra15@imperial.ac.uk
-photo: /img/people/pamela-bezerra.jpg
+photo: pamela-bezerra.jpg
 template: person.jade
 ---
 Hi, my name is Pamela and I'm a PhD student at Imperial.

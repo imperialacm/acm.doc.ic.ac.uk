@@ -3,7 +3,7 @@ name: Alastair F. Donaldson
 position: Faculty Sponsor
 order: 7
 email: a.wolf@imperial.ac.uk
-photo: /img/people/alastair-donaldson.jpg
+photo: alastair-donaldson.jpg
 hidden: yes
 template: person.jade
 website: http://multicore.doc.ic.ac.uk/
