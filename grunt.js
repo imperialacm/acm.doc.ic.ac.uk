@@ -79,7 +79,6 @@ module.exports = function(grunt) {
           src: "build/",
           dest: "/vol/www-virtual/acm",
           host: "gituser.doc.ic.ac.uk"
-          user: "sx14"
         }
       }
     },
