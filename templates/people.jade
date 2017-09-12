@@ -10,7 +10,7 @@ block content
   each person in people
     article.event
       header
-        a.photo(href=person.metadata.website != null ? person.metadata.website : '#')
+        a.photo(href=person.metadata.website != null ? person.metadata.website : '#/')
           img.img-circle(src='/img/people/' + person.metadata.photo, width=100)
         h2= person.metadata.name
           | 
@@ -35,6 +35,6 @@ block content
           .div.clearfix.visible-lg-block
         .col-lg-2
           .people
-            a(href=member.metadata.website != null ? member.metadata.website : '#')
+            a(href=member.metadata.website != null ? member.metadata.website : '#/')
               img.thumb.img-circle(src='/img/people/' + member.metadata.photo, width=100)
             h4= member.metadata.name

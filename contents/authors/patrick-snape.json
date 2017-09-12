@@ -1,7 +1,7 @@
 {
     "name": "Patrick Snape",
     "email": "patrick.snape08@imperial.ac.uk",
-    "homepage": "http://patricksnape.github.io/",
-    "photo": "/img/people/patrick-snape.jpg",
+    "website": "http://patricksnape.github.io/",
+    "photo": "patrick-snape.jpg",
     "bio":"Patrick Snape is currently working towards his PhD at Imperial College London. He is a member of the Intelligent Behaviour Understanding Group (IBUG), focusing on dense reconstruction of facial shape from images. In particular, he is interested in investigating the low-rank relationship between images and shape."
 }

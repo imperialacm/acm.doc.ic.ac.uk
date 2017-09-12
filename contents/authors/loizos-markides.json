@@ -1,7 +1,7 @@
 {
   "name": "Loizos Markides",
   "email": "l.markides11@imperial.ac.uk",
-  "homepage": "http://www.linkedin.com/in/loizosmarkides",
-  "photo": "/img/people/loizos-markides.jpg",
+  "website": "http://www.linkedin.com/in/loizosmarkides",
+  "photo": "loizos-markides.jpg",
   "bio": "is a PhD student in the Department of Computing at Imperial College of London in the group of Machine Learning and Intelligent Data. He is currently working in the area of pattern recognition and machine learning in functional MRI data analysis, with special interest in the decomposition of the fMRI signal to primary cognitive processes using unsupervised learning techniques, and the later use of this decomposition to build large-scale fMRI decoding systems."
 }

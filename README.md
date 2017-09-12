@@ -53,6 +53,13 @@ running
 $ node_modules/grunt-cli/bin/grunt deploy
 ```
 
+Maintain and Edit
+-----------------
+#### Events/News
+
+Each event or new should be seperate files except seminars, which are grouped by the years.
+
+
 MIT License
 ------------
 

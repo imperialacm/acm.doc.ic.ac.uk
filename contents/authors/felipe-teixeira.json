@@ -1,7 +1,7 @@
 {
   "name": "Filipe Peliz Pinto Teixeira",
   "email": "fp10@doc.ic.ac.uk",
-  "homepage": "http://www.doc.ic.ac.uk/~fp10/",
-  "photo": "/img/people/filipe-teixeira.jpg",
+  "website": "http://www.doc.ic.ac.uk/~fp10/",
+  "photo": "filipe-teixeira.jpg",
   "bio": "is a PhD student in the Department of Computing at Imperial College London working on spiking neural networks and their applications within the fields of artificial intelligence and neuroscience. In his research he focuses on how chaos may optimize information flow and storage within neural systems. Filipe has a BSc in Computer Science from the University of Johannesburg in South Africa and an MSc in Artificial Intelligence from Imperial College London. In his spare time he can often be found running around with an over sized camera or attempting to reach a comatose state in front of his precious computer."
 }

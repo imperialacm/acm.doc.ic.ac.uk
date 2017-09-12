@@ -1,7 +1,7 @@
 {
    "name": "James Booth",
   "email": "james.booth08@imperial.ac.uk",
-  "homepage": "http://www.linkedin.com/in/jabooth",
-  "photo": "/img/people/james-booth.jpg",
+  "website": "http://www.linkedin.com/in/jabooth",
+  "photo": "james-booth.jpg",
   "bio": "is a PhD student in the Intelligent Behaviour Understanding Group at Imperial College London. His research revolves around building and fitting 3D statistical models of the human face. He is also an honorary member of the Craniofacial Unit at Great Ormond Street Hospital, where his research is being applied to help advance corrective surgery for children with facial deformities. When not knee-deep in Python code James enjoys swimming and cycling, having recently completed his first Triathlon"
 }

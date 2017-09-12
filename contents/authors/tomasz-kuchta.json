@@ -1,7 +1,7 @@
 {
   "name": "Tomasz Kuchta",
   "email": "t.kuchta12@imperial.ac.uk",
-  "homepage": "http://srg.doc.ic.ac.uk/people/tomasz-kuchta/",
-  "photo": "/img/people/tomasz-kuchta.jpg",
+  "website": "http://srg.doc.ic.ac.uk/people/tomasz-kuchta/",
+  "photo": "tomasz-kuchta.jpg",
   "bio": "is a second year PhD student in the Software Reliability Group, Imperial College London, supervised by Dr Cristian Cadar. In his PhD research he works on a document recovery technique. He received a Master degree in Computer Science from Cracow University of Technology and after studies he was working as a software engineer in telecommunications industry."
 }

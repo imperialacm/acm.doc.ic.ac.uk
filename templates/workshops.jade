@@ -20,7 +20,7 @@ block content
           a(href=workshop.metadata.homepage)= workshop.title
       section.content
         a.photo(href='#')
-          img.img-circle(src=workshop.metadata.photo, width=100)
+          img.img-circle(src='/img/iccsw/' + workshop.metadata.photo, width=100)
         !{ typogr(workshop.html).typogrify() }
     .clearfix
     hr

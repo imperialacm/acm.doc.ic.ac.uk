@@ -1,7 +1,7 @@
 {
   "name": "John Lees-Miller",
   "email": "john.lees-miller@writelatex.com",
-  "homepage": "https://www.writelatex.com/",
-  "photo": "/img/people/john-lees-miller.png",
+  "website": "https://www.writelatex.com/",
+  "photo": "john-lees-miller.png",
   "bio": "John is cofounder and technical lead at WriteLaTeX, a London-based startup and social enterprise that builds modern collaborative authoring tools for scientists to help make science faster, more open and more transparent. Previously, he read computer science and then did a PhD in engineering mathematics on how to operate fleets of driverless cars efficiently, and he helped design and build the world's first driverless taxi system, the Heathrow Pod, at London's Heathrow Airport."
 }

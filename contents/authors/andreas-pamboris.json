@@ -1,7 +1,7 @@
 {
   "name": "Andreas Pamboris",
   "email": "a.pamboris09@imperial.ac.uk",
-  "homepage": "http://www.doc.ic.ac.uk/~ap5309/Welcome.html",
-  "photo": "/img/people/andreas-pamboris.jpg",
+  "website": "http://www.doc.ic.ac.uk/~ap5309/Welcome.html",
+  "photo": "andreas-pamboris.jpg",
   "bio": "is currently a post-doc at Imperial College London, where he is a member of the Large Scale Distributed Systems (LSDS) group. He completed his undergraduate studies at the Computer Science department of the University of Cyprus, followed by a Masters degree at the Computer Science and Engineering department of the University of California, San Diego. During this period of time he has done research on wireless sensor networks and data-center networking. Andreas recently completed his PhD at Imperial College London under the supervision of Dr. Peter Pietzuch. His research during the past 4 years has focused on mobile cloud computing solutions. More specifically, his work delves into automatic code offloading approaches that leverage cloud-based resources to enhance the capabilities of resource-constrained devices via static application partitioning techniques, which allow mobile applications to execute across mobile devices and the cloud with increased performance and functionality."
 }

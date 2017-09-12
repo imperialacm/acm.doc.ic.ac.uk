@@ -1,7 +1,7 @@
 {
   "name": "Zena Hira",
   "email": "zena.hira09@imperial.ac.uk",
-  "homepage": "http://www.linkedin.com/in/zenahira",
-  "photo": "/img/people/zena-hira.jpg",
+  "website": "http://www.linkedin.com/in/zenahira",
+  "photo": "zena-hira.jpg",
   "bio": "is a PhD student in the Department of Computing at Imperial College London, in the group of Machine Learning and Intelligent Data. She currently works on applying unsupervised machine learning algorithms and statistical techniques on high dimensional cancer data, in order to find ways of reducing the dimensionality and correctly classify new examples. Part of her research is examining how different forms of prior knowledge will affect the performance of already existing algorithms."
 }

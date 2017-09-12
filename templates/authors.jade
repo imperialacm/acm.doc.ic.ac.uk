@@ -1,0 +1,14 @@
+mixin author(authorName)
+  - var author = contents.authors[authorName + '.json']
+  .author
+    a.photo(href=author.metadata.website != null ? author.metadata.website : '#/')
+      img.img-circle(src='/img/people/' + author.metadata.photo, width=100)
+    p
+      span.author-name
+        a(href=author.metadata.website != null ? author.metadata.website : '#/')= author.metadata.name
+      | &nbsp;
+      = author.metadata.bio
+      | &nbsp;
+      if author.metadata.email
+        a(href='mailto:'+author.metadata.email)="Email to me→"
+  .clearfix

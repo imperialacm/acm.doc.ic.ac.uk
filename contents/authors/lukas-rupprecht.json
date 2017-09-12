@@ -1,8 +1,8 @@
 {
   "name": "Lukas Rupprecht",
   "email": "l.rupprecht12@imperial.ac.uk",
-  "homepage": "http://www.doc.ic.ac.uk/~lr12/",
-  "photo": "/img/people/lukas-rupprecht.jpg",
+  "website": "http://www.doc.ic.ac.uk/~lr12/",
+  "photo": "lukas-rupprecht.jpg",
   "bio": "Lukas Rupprecht is a PhD student at Imperial College London, working under the supervision of Peter Pietzuch in the Large-Scale Distribute Systems (LSDS) group. His research focuses on network-aware big data processing, in particular, for SQL-on-Hadoop solutions. More information can be found on his website: http://www.doc.ic.ac.uk/~lr12/."
 }
 

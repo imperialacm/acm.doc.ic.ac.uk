@@ -1,21 +1,6 @@
 extends layout
 
-mixin author(authorName)
-  - var author = contents.authors[authorName + '.json']
-  .author
-    a.photo(href='#')
-      img.img-circle(src=author.metadata.photo, width=100)
-    p
-      span.author-name
-        if author
-          a(href='mailto:'+author.metadata.email)= author.metadata.name
-        else
-          =authorName
-      | &nbsp;
-      = author.metadata.bio
-      | &nbsp;
-      a(href=author.metadata.homepage) More about me→
-  .clearfix
+include authors
 
 block append vars
   - bodyclass = 'event-detail'

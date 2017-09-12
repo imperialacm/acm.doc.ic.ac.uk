@@ -1,7 +1,7 @@
 {
   "name": "Christos Hadjinikolis",
   "email": "christos.hadjinikolis@kcl.ac.uk",
-  "homepage": "http://www.dcs.kcl.ac.uk/pg/hadjinik/",
-  "photo": "/img/people/christos-hadjinikolis.jpg",
+  "website": "http://www.dcs.kcl.ac.uk/pg/hadjinik/",
+  "photo": "christos-hadjinikolis.jpg",
   "bio": "is a senior PhD student in the Department of Informatics at King's College London working on agent dialogue games based on argumentative systems. In his research he focuses on opponent modelling aspects of such games and with strategizing, while he is also interested in the development of Monte-Carlo simulations."
 }
