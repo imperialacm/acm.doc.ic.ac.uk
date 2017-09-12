@@ -3,9 +3,9 @@ Imperial College London ACM Student Chapter website
 
 The website is statically generated using [Wintersmith](http://wintersmith.io/).
 
-Webpages are written using [Jade](http://jade-lang.com/) templates (``.jade``)
-which are populated with information from markdown (``.md``) or JSON files
-(``.json``).
+Webpages are written using [Jade](http://jade-lang.com/) templates (``.jade'')
+which are populated with information from markdown (``.md'') or JSON files
+(``.json'').
 
 Installing dependencies
 -----------------------
@@ -18,10 +18,10 @@ Now in the root of this project run the following.
 $ npm install
 ```
 
-This will locally install the required dependencies into a ``node_modules`` directory.
+This will locally install the required dependencies into a ``node_modules''  directory.
 
-Note that the ``grunt`` tool (``grunt-cli`` package) is used to perform tasks so it
-is useful to put ``/node_modules/grunt-cli/bin/`` in your ``PATH``.
+Note that the ``grunt'' tool (``grunt-cli'' package) is used to perform tasks so it
+is useful to put ``/node_modules/grunt-cli/bin/'' in your ``PATH''.
 
 Development
 -----------
@@ -35,14 +35,16 @@ Running "wintersmith:preview" (wintersmith) task
 ...
 ```
 
-Now you can visit ``http://localhost:8080`` in your web browser to see a
+Now you can visit ``http://localhost:8080'' in your web browser to see a
 generated preview of the website. Wintersmith will monitor for changes to
 files and will automatically regenerate pages when necessary so you can
-just leave ``grunt preview`` running whilst you make changes and refresh
+just leave ``grunt preview'' running whilst you make changes and refresh
 your browser when you make changes to files.
 
 Deployment
 ----------
+
+You must first email CSG to get access to ``/vol/www-virtual/acm''
 
 Once you are happy with your changes push them to this repository and then deploy by
 running
