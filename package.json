@@ -2,6 +2,7 @@
   "name": "acm.doc.ic.ac.uk",
   "version": "0.0.1",
   "author": "Petr Hosek <p.hosek@imperial.ac.uk>",
+  "maintain": "Shale Xiong <sx14@ic.ac.uk>",
   "description": "Imperial College London ACM Student Chapter",
   "repository": {
     "type": "git",
