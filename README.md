@@ -63,6 +63,10 @@ For those who use markdown, the template for ```index.md``` is as the follows:
 ---
 title: title 
 date: MM/DD/YYYY HH/MIN
+author:
+  - 
+  - 
+room:
 template: event.jade
 ---
 The main body that shows up as intro.
@@ -74,6 +78,10 @@ The rest.
 Note that month is at the beginning followed by date in the ``date`` field.
 The ```<span class="more"></span>``` is used to split the main body, above which will be considered as intro and will show up in the Events/News page.
 It is recommended to include all other resources, for example images, within the same directory.
+
+The ``author`` and ``room`` fields are optional.
+The ``author`` field includes a list of the authors, which are the json files' names in ``people`` directory. 
+
 
 #### People
 The information of all people INCLUDE those in events are stored under the ``people`` directory.
