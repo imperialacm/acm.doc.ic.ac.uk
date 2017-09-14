@@ -1,5 +1,5 @@
 ---
-title: How to get involed
+title: Get Involed
 lead: Provide a place for students to network and learn from peers.
 template: page.jade
 ---
@@ -38,4 +38,4 @@ send us your username
 1. Keep up to date with the Student Chapter’s events by regularly checking our
 calendar, or simply by importing it into your Google Calendar.
 1. **Learn how to use the tools we use to run the chapter. You can read about
-   them [in our Chapter Resources Guide](/chapter-resources-guide/)**
+   them [in our Chapter Resources Guide](/officer/)**
