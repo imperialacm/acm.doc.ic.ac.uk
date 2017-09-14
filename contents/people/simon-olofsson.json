@@ -1,6 +1,7 @@
 {
-"name": "Simon Olofsson",
-"email": "simon.olofsson15@imperial.ac.uk",
-"photo": "simon-olofsson.jpg",
-"website": "https://www.doc.ic.ac.uk/~so2015/"
+  "member": true,  
+  "name": "Simon Olofsson",
+  "email": "simon.olofsson15@imperial.ac.uk",
+  "photo": "simon-olofsson.jpg",
+  "website": "https://www.doc.ic.ac.uk/~so2015/"
 }

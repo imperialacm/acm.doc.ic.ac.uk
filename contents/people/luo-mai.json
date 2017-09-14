@@ -1,4 +1,7 @@
 {
+  "member": true,
   "name": "Luo Mai",
-  "photo": "luo-mai.jpg"
+  "photo": "luo-mai.jpg",
+  "email": "luo.mai11@imperial.ac.uk",
+  "website": "https://www.doc.ic.ac.uk/~lm111/"
 }

@@ -1,5 +1,6 @@
 {
-"name": "Juliana Franco",
-"email": "j.vicente-franco@imperial.ac.uk",
-"photo": "juliana-franco.jpg"
+  "member": true,
+  "name": "Juliana Franco",
+  "email": "j.vicente-franco@imperial.ac.uk",
+  "photo": "juliana-franco.jpg"
 }

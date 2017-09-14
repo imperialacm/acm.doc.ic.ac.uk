@@ -4,6 +4,7 @@ position: Membership Chair
 order: 5
 email: e.graversen16@imperial.ac.uk
 photo: eva-graversen.jpg
+website: http://mrg.doc.ic.ac.uk/people/eva-graversen/
 template: person.jade
 ---
 I am a PhD student working on reversible event structures under the supervision of Dr. Iain Phillips and Prof. Nobuko Yoshida.

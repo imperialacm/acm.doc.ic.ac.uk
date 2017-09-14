@@ -19,7 +19,7 @@ block content
         !{ typogr(person.html).typogrify() }
 
   - var members = _.chain(contents.people._.pages).filter(function(item) {
-  -   return 'name' in item.metadata
+  -   return 'member' in item.metadata
   - }).sortBy(function(item) {
   -   return item.metadata.name
   - }).value()

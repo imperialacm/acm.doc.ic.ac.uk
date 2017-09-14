@@ -1,4 +1,7 @@
 {
+  "member": true,
   "name": "Marily Nika",
-  "photo": "marily-nika.jpg"
+  "photo": "marily-nika.jpg",
+  "email": "marilh@gmail.com",
+  "website": "http://www.marily.me/"
 }

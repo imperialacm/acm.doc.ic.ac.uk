@@ -1,6 +1,7 @@
 {
-"name": "Shale Xiong",
-"email": "garnelo@imperial.ac.uk",
-"photo": "shale-xiong.jpg",
-"website": "https://www.doc.ic.ac.uk/~sx14/"
+  "member": true,
+  "name": "Shale Xiong",
+  "email": "garnelo@imperial.ac.uk",
+  "photo": "shale-xiong.jpg",
+  "website": "https://www.doc.ic.ac.uk/~sx14/"
 }

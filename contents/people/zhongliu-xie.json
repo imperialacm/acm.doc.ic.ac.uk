@@ -1,6 +1,7 @@
 {
-"name": "Zhongliu Xie",
-"email": "cloud.arkadia@gmail.com",
-"photo": "zhongliu.jpg",
-"website": "http://www.doc.ic.ac.uk/~zx10/"
+  "member": true,
+  "name": "Zhongliu Xie",
+  "email": "cloud.arkadia@gmail.com",
+  "photo": "zhongliu.jpg",
+  "website": "http://www.doc.ic.ac.uk/~zx10/"
 }

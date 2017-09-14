@@ -1,4 +1,7 @@
 {
+  "member": true,
   "name": "Zafeirios Fountas",
-  "photo": "zafeirios-fountas.jpg"
+  "photo": "zafeirios-fountas.jpg",
+  "email": "zfountas@imperial.ac.uk",
+  "website": "https://www.doc.ic.ac.uk/~zf509/"
 }

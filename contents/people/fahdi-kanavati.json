@@ -1,5 +1,7 @@
 {
-"name": "Fahdi Kanavati",
-"email": "fahdi.kanavati12@imperial.ac.uk",
-"photo": "fahdi-kanavati.jpg"
+  "member": true,
+  "name": "Fahdi Kanavati",
+  "email": "fahdi.kanavati12@imperial.ac.uk",
+  "photo": "fahdi-kanavati.jpg",
+  "website": "https://biomedia.doc.ic.ac.uk/person/fahdi-kanavati/"
 }

@@ -1,4 +1,7 @@
 {
+  "member": true,
   "name": "Roman Kolcun",
-  "photo": "roman-kolcun.jpg"
+  "photo": "roman-kolcun.jpg",
+  "email": "roman.kolcun@imperial.ac.uk",
+  "website": "http://www.imperial.ac.uk/people/roman.kolcun"
 }

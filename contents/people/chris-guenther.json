@@ -1,4 +1,6 @@
 {
+  "member": true,
   "name": "Marcel Christoph Guenther",
-  "photo": "chris-guenther.jpg"
+  "photo": "chris-guenther.jpg",
+  "website": "http://wp.doc.ic.ac.uk/machr/"
 }

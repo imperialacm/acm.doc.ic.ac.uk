@@ -1,4 +1,6 @@
 {
+  "member": true,
   "name": "Evangelos Motesnitsalis",
-  "photo": "evangelos-motesnitsalis.jpg"
+  "photo": "evangelos-motesnitsalis.jpg",
+  "website": "http://users.auth.gr/mevangem/"
 }

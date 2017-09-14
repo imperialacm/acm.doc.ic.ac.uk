@@ -1,6 +1,7 @@
 {
-"name": "Eric Seckler",
-"email": "e.seckler14@imperial.ac.uk",
-"photo": "eric-seckler.png",
-"website": "https://www.linkedin.com/in/ericseckler"
+  "member": true,
+  "name": "Eric Seckler",
+  "email": "e.seckler14@imperial.ac.uk",
+  "photo": "eric-seckler.png",
+  "website": "https://www.linkedin.com/in/ericseckler"
 }

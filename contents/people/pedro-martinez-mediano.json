@@ -1,5 +1,7 @@
 {
-"name": "Pedro Martinez Mediano",
-"email": "pedro.martinez-mediano13@imperial.ac.uk",
-"photo": "pedro-mediano.jpg"
+  "member": true,
+  "name": "Pedro Martinez Mediano",
+  "email": "pedro.martinez-mediano13@imperial.ac.uk",
+  "photo": "pedro-mediano.jpg",
+  "website": "https://www.doc.ic.ac.uk/~pam213/"
 }

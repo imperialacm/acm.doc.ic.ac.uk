@@ -1,4 +1,7 @@
 {
+  "member": true,
   "name": "Andrew V. Jones",
-  "photo": "andrew-jones.jpg"
+  "photo": "andrew-jones.jpg",
+  "website": "https://www.doc.ic.ac.uk/~andrewj/"
+
 }

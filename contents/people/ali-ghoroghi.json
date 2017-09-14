@@ -1,4 +1,6 @@
 {
+  "member": true,
   "name": "Ali Ghoroghi",
-  "photo": "ali-ghoroghi.jpg"
+  "photo": "ali-ghoroghi.jpg",
+  "website": "https://www.doc.ic.ac.uk/~aghorogh/"
 }

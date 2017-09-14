@@ -1,5 +1,7 @@
 {
-"name": "Pamela Bezerra",
-"email": "p.lins-bezerra15@imperial.ac.uk",
-"photo": "pamela-bezerra.jpg"
+  "member": true,
+  "name": "Pamela Bezerra",
+  "email": "p.lins-bezerra15@imperial.ac.uk",
+  "photo": "pamela-bezerra.jpg",
+  "website": "http://wp.doc.ic.ac.uk/aese/person/pamela/"
 }
