@@ -1,9 +1,13 @@
 extends layout
 
 block content
-  - var people = _.chain(contents.people._.directories).map(function(item) {
-  -   return item.index
-  - }).compact().sortBy(function(item) {
+  - var people = _.chain(contents.people._.pages).filter(function(item) {
+  -   return 'order' in item.metadata
+  - }).filter(function(item) {
+  -   return 'position' in item.metadata
+  - }).filter(function(item) {
+  -   return 'bio' in item.metadata
+  - }).sortBy(function(item) {
   -   return item.metadata.order
   - }).value()
 
@@ -12,11 +16,11 @@ block content
       header
         a.photo(href=person.metadata.website != null ? person.metadata.website : '#/')
           img.img-circle(src='/img/people/' + person.metadata.photo, width=100)
-        h2= person.metadata.name
-          | 
+        h2
+          a(href=person.metadata.website != null ? person.metadata.website : '#/')= person.metadata.name
+          | &nbsp
           span.text-muted= person.metadata.position
-      section.content
-        !{ typogr(person.html).typogrify() }
+      section.content= person.metadata.bio
 
   - var members = _.chain(contents.people._.pages).filter(function(item) {
   -   return 'member' in item.metadata

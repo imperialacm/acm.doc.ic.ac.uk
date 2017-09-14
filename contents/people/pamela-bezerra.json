@@ -1,7 +1,10 @@
 {
   "member": true,
+  "order": 2,
+  "position": "Vice Chair",
   "name": "Pamela Bezerra",
   "email": "p.lins-bezerra15@imperial.ac.uk",
   "photo": "pamela-bezerra.jpg",
-  "website": "http://wp.doc.ic.ac.uk/aese/person/pamela/"
+  "website": "http://wp.doc.ic.ac.uk/aese/person/pamela/",
+  "bio": " Hi, my name is Pamela and I'm a PhD student at Imperial. My background is in computer engineering and I'm currently working with IoT and wireless sensor networks. My research interests are sensors, communication protocol, energy optimization, SmartCities and IoT."
 }

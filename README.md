@@ -76,26 +76,24 @@ The ```<span class="more"></span>``` is used to split the main body, above which
 It is recommended to include all other resources, for example images, within the same directory.
 
 #### People
-There are two parts under ```people``` directory, current officers of the chapter and honourable members.
-Each current officer is in in separate directory.
-For those who use markdown, the template for ```index.md``` is as the follows:
-```markdown
----
-name: name
-position: position
-order: 1
-email: email
-photo: photo-file-name
-website: website
-template: person.jade
----
-Short intro.
+The information of all people INCLUDE those in events are stored under the ``people`` directory.
+It is recommended to use json here, and the template is as the follows
+```json
+{ 
+  "member": true,
+  "order": 1,
+  "position": "",
+  "name": "",
+  "email": "",
+  "website": "",
+  "photo": "",
+  "bio": ""
+}
 ```
-The ```order``` decides the order in the ```People``` page.
-All the photos MUST be saved in ```/img/people/``` directory.
-ONLY PUT the file name in the ```photo``` field but no path is needed.
-
-
+Except the ``name``, the rest fields are optional.
+If ``member`` field exists, it will be shown in the Member of the chapter secion in the People page.
+if all ``order``, ``position`` and ``bio`` exist, it will be shown as current officer for the chapter in the order of ``order`` field in the People page.
+All photo should stored in ``/img/people/`` and for the ``photo`` field here, it is only necessary to specify the file name but not the path.
 
 MIT License
 ------------

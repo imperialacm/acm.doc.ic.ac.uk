@@ -1,7 +1,7 @@
 ---
 title: ACM Student Chapter
+lead: Whenever you have something to say, just talk to us, we are here for you.
 template: people.jade
-lead: Provide a place for students to network and learn from peers.
 ---
 The kinds of activities a student chapter can undertake are diverse and it is up to all of us, the chapter members, to decide and organise activities that are useful and interesting.
 If you have an idea for a competition, a tutorial, a side tour, or something else raise your vice.
