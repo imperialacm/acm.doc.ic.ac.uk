@@ -2,5 +2,6 @@
   "member": true,
   "name": "Petr Hosek",
   "photo": "petr-hosek.jpg",
-  "website": "http://srg.doc.ic.ac.uk/people/petr-hosek/"
+  "website": "http://srg.doc.ic.ac.uk/people/petr-hosek/",
+  "bio": "is a doctoral student in the Department of Computing at Imperial College London, where he works in the Software Reliability Group under the supervision of Cristian Cadar. In his research, he focuses on exploring ways to improve the software update process. Petr has an MSc and BSc in Computer Science from Charles University in Prague, where he specialised in software engineering and dependable systems."
 }
