@@ -1,5 +1,5 @@
 ---
-title: Membership
+title: Join Us
 lead: Join the chapter and get involved in chapter activities.
 template: membership.jade
 ---
