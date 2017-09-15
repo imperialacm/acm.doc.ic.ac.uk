@@ -1,6 +1,6 @@
 .sf-back-to-top {
-    background-color: #50A1CB; /* button color */
-    color: white; /* text/arrow color */ 
+    background-color: #363636; /* button color */
+    color: #fff; /* text/arrow color */ 
     display: none;
     z-index: 999;
     /* float in bottom right corner */
@@ -17,37 +17,25 @@
     /* round button */
     -webkit-border-radius: 50%;
     border-radius: 50%;
-}
-
-a.sf-back-to-top {
-    font-weight: 600;
+    font-weight: 900;
     letter-spacing: 2px;
-    font-size: 12px;
+    font-size: 15px;
     text-transform: uppercase;
     text-align: center;
-    line-height: 1.6;
+    line-height: 2.8;
     padding-left: 2px;
     padding-top: 4px;    
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
-a.sf-back-to-top .arrow:before {
-    content: "\e02d";
-    font-family: 'squarespace-ui-font';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1;
-    speak: none;
-    -webkit-font-smoothing: antialiased;
-    content: "\e02d";
-    text-align: center;
-    display: block;
-    vertical-align: middle;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
+.sf-back-to-top:hover {
+    color: #363636; /* button color */
+    background-color: white; /* text/arrow color */ 
+    text-decoration: none;
     cursor: pointer;
-    margin-left: -4px;
 }
