@@ -24,6 +24,7 @@ html(lang='en')
       link(rel='stylesheet', href='/css/ss-social.css')
       link(rel='stylesheet', href='/css/app.css')
       link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans')
+      link(rel='stylesheet', href='/css/flow.css')
       <!--[if lt IE 9]>
       script(src='/js/html5shiv.js')
       <![endif]-->
@@ -64,6 +65,8 @@ html(lang='en')
           h1=page.title
           p.lead=page.metadata.lead
     .site-content
+      a(herf='#').sf-back-to-top
+        span.arrow Top
       .container
         block content
     footer.site-footer(role='contentinfo')
@@ -104,9 +107,11 @@ html(lang='en')
             p.credit &copy; #{ new Date().getFullYear() } 
               a(href=locals.url)= locals.owner
     block scripts
-      script(src='https://code.jquery.com/jquery-1.10.2.min.js')
+      script(src='https://code.jquery.com/jquery-3.2.1.min.js')
       script(src='/js/bootstrap.min.js')
       script(src='/js/app.js')
       script(src='/js/bootstrapValidator.min.js')
+      include includes/flow
+      +flow(300)
       //-include search
       //-+search
