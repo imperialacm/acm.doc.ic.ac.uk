@@ -34,8 +34,8 @@
 }
 
 .sf-back-to-top:hover {
+    background-color: rgba(255,255,255,0); /* text/arrow color */ 
     color: #363636; /* button color */
-    background-color: white; /* text/arrow color */ 
     text-decoration: none;
     cursor: pointer;
 }
