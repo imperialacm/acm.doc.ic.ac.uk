@@ -17,9 +17,9 @@ block content
           |  at Department of Computing, Imperial College London  
           = workshop.metadata.room
         h2
-          a(href=workshop.metadata.homepage)= workshop.title
+          a(href=workshop.metadata.website)= workshop.title
       section.content
-        a.photo(href='#')
+        a.photo(href=workshop.metadata.website)
           img.img-circle(src='/img/iccsw/' + workshop.metadata.photo, width=100)
         !{ typogr(workshop.html).typogrify() }
     .clearfix

@@ -3,7 +3,7 @@ title: ICCSW'12
 date: 09/27/2012 9:00
 from: 09/27/2012
 to: 09/28/2012
-homepage: http://iccsw.doc.ic.ac.uk/2012
+website: http://iccsw.doc.ic.ac.uk/2012
 photo: iccsw12.png
 ---
 Following the success of the inaugural workshop, 2012 Imperial College

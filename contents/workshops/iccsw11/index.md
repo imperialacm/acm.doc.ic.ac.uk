@@ -3,7 +3,7 @@ title: ICCSW'11
 date: 09/28/2011 9:00
 from: 09/28/2011
 to: 09/29/2011
-homepage: http://iccsw.doc.ic.ac.uk/2011
+website: http://iccsw.doc.ic.ac.uk/2011
 photo: iccsw11.png
 ---
 The inaugural workshop aimed at bringing together students at different

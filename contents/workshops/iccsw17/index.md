@@ -3,7 +3,7 @@ title: ICCSW'17
 date: 09/26/2017 9:00
 from: 09/26/2017
 to: 09/27/2017
-homepage: http://iccsw.doc.ic.ac.uk/2017
+website: http://iccsw.doc.ic.ac.uk/2017
 photo: iccsw17.jpg
 ---
 The 2017 Imperial College Computing Student Workshop aims to provide an international forum for doctoral students to discuss a range of topics that are current in computer science research. 
