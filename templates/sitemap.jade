@@ -10,11 +10,11 @@ urlset(
     changefreq weekly
     priority 1.0
   url
-    loc= locals.url + "/events/"
+    loc= locals.url + "/sens/"
     lastmod= buildDate
     changefreq weekly
     priority 1.0
-  - var events = _.chain(contents.eventsnews._.directories).map(function(item) {
+  - var events = _.chain(contents.sens._.directories).map(function(item) {
   -   return item.index
   - }).compact().sortBy(function(item) {
   -   return -item.date
@@ -32,7 +32,7 @@ urlset(
     changefreq weekly
     priority 1.0
   url
-    loc= locals.url + "/people/"
+    loc= locals.url + "/team/"
     lastmod= buildDate
     changefreq monthly
     priority 1.0
