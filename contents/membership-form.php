@@ -2,12 +2,12 @@
 <?php
 require './include/PHPMailerAutoload.php';
 
-$errors = '';
+$text = '';
 
 if(empty($_POST['firstname']) ||
    empty($_POST['lastname']) ||
    empty($_POST['email'])) {
-  $errors .= "\n all fields are required";
+  $text .= "All fields are required. ";
 }
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
@@ -16,10 +16,10 @@ $email = $_POST['email'];
 if (!preg_match(
 "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
 $email)) {
-  $errors .= "\n invalid email address";
+  $text .= "Invalid email address. ";
 }
 
-if (empty($errors)) {
+if (empty($text)) {
   $mail = new PHPMailer;
 
   $mail->isSMTP();
@@ -34,12 +34,12 @@ if (empty($errors)) {
     "Email: $email\n";
 
   if (!$mail->send()) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+    $text .= "Message could not be sent. ";
+    $text .= "Mailer Error: ";
+    $text .= $mail->ErrorInfo;
     exit;
   }
-
-  echo 'Message has been sent';
+  $text .= "Message has been sent.";
 }
 ?>
 <!DOCTYPE html>
@@ -84,12 +84,11 @@ if (empty($errors)) {
             </div>
             <nav class="navbar-collapse collapse nav-collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="/news/">News</a></li>
-                <li><a href="/events/">Events</a></li>
+                <li><a href="/joinus/">Join us</a></li>
+                <li><a href="/sens/">Seminars/Events/News</a></li>
                 <li><a href="/workshops/">Workshops</a></li>
                 <li><a href="/bylaws/">Bylaws</a></li>
-                <li><a href="/people/">People</a></li>
+                <li><a href="/team/">Team</a></li>
               </ul>
             </nav>
           </div>
@@ -103,10 +102,11 @@ if (empty($errors)) {
     <div class="site-content">
       <div class="container">
         <section id="page">
-          <h2>Your requested has been submitted, we will contact you shortly</h2>
-          <?php
-          echo nl2br($errors);
-          ?>
+          <h2>
+              <?php
+              echo nl2br($text);
+              ?>
+          </h2>
         </section>
       </div>
     </div>
