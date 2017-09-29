@@ -45,8 +45,9 @@ There are no commitments involved in becoming a member, it’s for free and supe
 
 # Contribute to the Chapter
 
-So you're interested in getting involved? That's great, even a little bit of help makes a difference.
+So you're interested in contributing to the chapter? That's great, even a little bit of help makes a difference.
 To get started you need to send us some information so you can gain access to the tools we use for organising our chapter.
+You can read the [Guide](/officer/) to learn the tools we use.
 
 ### What you need to send us
 
@@ -62,4 +63,3 @@ But if you don’t have one let us know and we’ll use your Imperial email.
 
 Send to ``acm-officers@imperial.ac.uk`` telling us that you'd like to get involved.
 
-You can read about [Guide](/officer/) to learn how we run this student chapter.

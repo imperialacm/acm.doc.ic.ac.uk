@@ -4,13 +4,13 @@ include authors
 
 block content
   - // The reduce is to handle the multiple year directories
-  - var seminarEvents = _.chain(contents.eventsnews.seminars._.directories).reduce( function (memo,v) {
+  - var seminarEvents = _.chain(contents.sens.seminars._.directories).reduce( function (memo,v) {
   -   return memo.concat(_.toArray(v))
   -  }, [ ]).map( function(item) {
   -   return item.index
   - }).compact().value()
   - // These are the other events, these only go one directory deep
-  - var otherEvents = _.chain(contents.eventsnews._.directories).map(function(item) {
+  - var otherEvents = _.chain(contents.sens._.directories).map(function(item) {
   -   return item.index
   - }).compact().value()
   - // Concat the events and create dictionary mapping year to lists of events
