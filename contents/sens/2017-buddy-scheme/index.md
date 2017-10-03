@@ -11,7 +11,7 @@ We aim to help every new PhD. student to get involved and to enjoy PhD life.
 
 - Use the department facilities?
 - The best food for lunches?
-- Should I teaching assistants and laboratory helpers?
+- Should I be a teaching assistant and laboratory helper?
 - Events for students?
 - Go around London?
 - Way to save money?
