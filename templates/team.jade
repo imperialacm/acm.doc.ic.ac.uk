@@ -41,4 +41,6 @@ block content
           .people
             a(href=member.metadata.website != null ? member.metadata.website : '#/')
               img.thumb.img-circle(src='/img/people/' + member.metadata.photo, width=100)
-            h4= member.metadata.name
+            h5
+              a(style ="color:black" href=member.metadata.website != null ? member.metadata.website : '#/')
+                =member.metadata.name
