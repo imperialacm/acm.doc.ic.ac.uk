@@ -4,8 +4,8 @@ lead: Subscribe the chapter and get involved in chapter activities.
 template: joinus.jade
 ---
 
-# Subscribe Us
-The first step for you to get involved is to subscribe the chapter.
+# Subscribe Us and Become a Member
+The first step for you to get involved is to subscribe the chapter and become a member of us.
 You can be involved as a listener, as an organiser, as a speaker; it is your choice how and how much you want to contribute.
 Memberships are open to all Imperial postgraduate students and you don’t have to be an ACM member to join the Imperial College London ACM Student Chapter.
 
