@@ -30,7 +30,7 @@ if (empty($text)) {
   $mail_new_member->Body    = 
     "<p>Hi, $firstname $lastname</p>".
     "<p>Thanks for subscribing us and you are a member of Imperial College London ACM Student Chapter now. You can always find more information in our website <a href=\"http://acm.doc.ic.ac.uk/\">http://acm.doc.ic.ac.uk</a></p>".
-    "<p>Imperial College ACM Student Chapter Team</p>";
+    "<p>Imperial College London ACM Student Chapter Team</p>";
   if (!$mail_new_member->send()) {
     $text .= "We cannot send confirmation email to you.";
     $text .= "Please double check. :)";
