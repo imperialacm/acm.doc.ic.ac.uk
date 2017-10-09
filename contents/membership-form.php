@@ -20,23 +20,43 @@ $email)) {
 }
 
 if (empty($text)) {
-  $mail = new PHPMailer;
+  $mail_new_member = new PHPMailer;
+  $mail_new_member->isSMTP();
+  $mail_new_member->Host = 'automail.cc.ic.ac.uk';
+  $mail_new_member->From = 'noreply@imperial.ac.uk';
+  $mail_new_member->addAddress($email, $firstname . ' ' . $lastname);
+  $mail_new_member->Subject = "Subscribe and Become a Member of IC-ACM Student Chapter.";
+  $mail_new_member->isHTML(true);
+  $mail_new_member->Body    = 
+    "<p>Hi, $firstname $lastname</p>".
+    "<p>Thanks for subscribing us and you are a member of Imperial College London ACM Student Chapter now. You can always find more information in our website <a href=\"http://acm.doc.ic.ac.uk/\">http://acm.doc.ic.ac.uk</a></p>".
+    "<p>Imperial College ACM Student Chapter Team</p>";
+  if (!$mail_new_member->send()) {
+    $text .= "We cannot send confirmation email to you.";
+    $text .= "Please double check. :)";
+    $text .= $mail_acm->ErrorInfo;
+    exit;
+  }
+}
 
-  $mail->isSMTP();
-  $mail->Host = 'automail.cc.ic.ac.uk';
-  $mail->From = 'noreply@imperial.ac.uk';
-  $mail->addAddress('acm@imperial.ac.uk');
-  $mail->addReplyTo($email, $firstname . ' ' . $lastname);
-  $mail->Subject = "Membership Request ($firstname $lastname)";
-  $mail->Body    = 
+if (empty($text)) {
+  $mail_acm = new PHPMailer;
+
+  $mail_acm->isSMTP();
+  $mail_acm->Host = 'automail.cc.ic.ac.uk';
+  $mail_acm->From = 'noreply@imperial.ac.uk';
+  $mail_acm->addAddress('acm@imperial.ac.uk');
+  $mail_acm->addReplyTo($email, $firstname . ' ' . $lastname);
+  $mail_acm->Subject = "Membership Request ($firstname $lastname)";
+  $mail_acm->Body    = 
     "First Name: $firstname\n".
     "Last Name: $lastname\n".
     "Email: $email\n";
 
-  if (!$mail->send()) {
+  if (!$mail_acm->send()) {
     $text .= "Message could not be sent. ";
     $text .= "Mailer Error: ";
-    $text .= $mail->ErrorInfo;
+    $text .= $mail_acm->ErrorInfo;
     exit;
   }
   $text .= "Message has been sent.";
