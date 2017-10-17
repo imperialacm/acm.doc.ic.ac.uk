@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/bin/sh
 
 node_modules/grunt-cli/bin/grunt preview

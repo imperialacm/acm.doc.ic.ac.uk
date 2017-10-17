@@ -1,0 +1,7 @@
+{
+  "name": "Simon Peyton Jones",
+  "email": "simonpj@microsoft.com",
+  "photo": "simon-peyton-jones.jpg",
+  "website": "https://www.microsoft.com/en-us/research/people/simonpj/",
+  "bio": "He is a researcher at Microsoft Research in Cambridge, England since Sept 1998. He is also an Honorary Professor of the Computing Science Department at Glasgow University, where he was a professor during 1990-1998. His main interests are the design, implementation, and application of lazy functional languages, in practical terms, the design and implementation of the language Haskell. In particular, much of his work is focused around the Glasgow Haskell Compiler, and its ramifications."
+}

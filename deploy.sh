@@ -1,4 +1,3 @@
-#!/bin/bash
+#!/bin/sh
 
-git pull
 node_modules/grunt-cli/bin/grunt deploy
