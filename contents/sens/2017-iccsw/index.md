@@ -15,6 +15,7 @@ template: event.jade
 </div>
 
 #### After a year hiatus, ICCSW was back!
+###### 26th - 27th Sept.
 
 
 It was a great success on all fronts, with over 30 students attending a variety of interesting and novel talks, covering systems, networking, programming languages and machine learning.
