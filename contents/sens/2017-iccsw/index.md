@@ -9,14 +9,14 @@ template: event.jade
 ---
 
 
-<div style="float:right; margin-left:10pt">
-![Welcome Back ICCSW](welcome.jpg) &nbsp;
-![Welcome Back ICCSW](workshop.jpg)
-</div>
 
 #### After a year hiatus, ICCSW was back!
 ###### 26th - 27th Sept.
 
+<div class="post-img-to-right">
+![Welcome Back ICCSW](welcome.jpg)
+![Welcome Back ICCSW](workshop.jpg)
+</div>
 
 It was a great success on all fronts, with over 30 students attending a variety of interesting and novel talks, covering systems, networking, programming languages and machine learning.
 This year, aloneside with the student talks, keynotes _Google’s Javascript Engine_ from Leszek Swirski and _How to Write a Great Paper_ from Simon Peyton Jones, and social event in Sky Garden, we had a new addition of a breakfast poster session, where students arose first thing in the morning to be quizzed on their posters, as inquisitive wanderers chowed down on croissants and coffee.
@@ -45,10 +45,10 @@ By looking at the run-time state, they increase the performance of JavaScript co
 Simon Peyton Jones talked several tips for writing a research paper.
 All those tips are helpful for many junior and even senior researchers.
 
-<center>
+<div class="post-img-fix-height">
 ![Leszek Swirski](leszek.jpg) &nbsp;
 ![Simon Peyton Jones](simon.jpg) 
-</center>
+</div>
 
 <br>
 
@@ -56,9 +56,9 @@ For our social event, we invited the students to explore the Sky Garden atop the
 
 <br>
 
-<center>
-![Social Event](social.jpg) &nbsp;
-</center>
+<div class="post-img-center">
+![Social Event](social.jpg)
+</div>
 
 <br>
 
