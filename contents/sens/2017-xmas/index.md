@@ -15,21 +15,19 @@ author:
 #### Merry Christmas!
 
 We wish you a merry Christmas.
-Hope all of you enjoying our [student workshop (ICCSW)](/workshops/), social events and seminars for 2017.
+Hope all of you enjoyed our [student workshop (ICCSW)](/workshops/), social events and seminars for 2017.
 
 <div class="post-img-to-right">
 ![speaker](speaker-1.jpg)
 ![food](food.jpg)
 </div>
 
-#### Here is another social event and possibly the last one for 2017 --- Christmas Dinner. 
+#### Our last social event for this year was the Christmas Dinner. 
 
-We invited all PhD. Students and RAs for the dinner.
-Thanks for everybody spending an evening with us ☺, as we all know the end of a term could be very busy.
-Also we have [Tom Ellis](https://www.microsoft.com/en-us/research/people/toelli/) on behalf of our sponsor [Macrosoft](https://www.microsoft.com/en-gb/) and he gave us a short talk about the career as a research software engineer in [Microsoft Research Cambridge(MSR)](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/).
-The research software engineers in [MSR](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) first help researchers and second transfer research ideas into software prototypes and then products.
-He also mentioned [MSR](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) is always welcome Imperial College's students to do internship and apply job.
+Thanks to everybody who decided to spend the evening with us ☺, as we all know the end of a term could be very busy.
+We also had [Tom Ellis](https://www.microsoft.com/en-us/research/people/toelli/) on behalf of our sponsor [Microsoft](https://www.microsoft.com/en-gb/) who gave us a short talk about the career as a research software engineer in [Microsoft Research Cambridge (MSR)](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/).
+The research software engineers in [MSR](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) help researchers and transfer research ideas into software prototypes and then into products.
+Fortunately [MSR](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/) always welcomes Imperial College students for internship and jobs.
 
  <span class="more"></span>
-
 

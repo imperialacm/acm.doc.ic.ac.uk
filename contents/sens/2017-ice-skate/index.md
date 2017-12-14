@@ -10,15 +10,14 @@ template: event.jade
 ![All attendants](group.jpg)
 </div>
 
-We had an amazing ice skating event at QUEENS skate near Queensway State.
-Even though it is the first time for some of us to skate, but luckily we also have few peers who are very good at ice-skating.
-We also have some fresh faces to join our social event for the first time.
-Some went for a dinner after the ice skating.
+We had an amazing ice skating event at QUEENS skate. For some of us it was the first time we have gone ice-skating but luckily there were also more skilled ice-skaters amongst us.
 
-If you miss this time, you can join our next time social event!
-Come to the event, join us and have fun!
-For those who have not subscribe us yet, do that now, as we will send the event announcement through email.
+If you missed this time, you can join our next social event!
 
-Thanks for [Macrosoft](https://www.microsoft.com/en-gb/) who sponsors this event.
+#### Join us and have fun!
+
+For those who have not subscribed us yet, do that now, as we will send the event announcements through email.
+
+Thanks to [Microsoft](https://www.microsoft.com/en-gb/) who sponsors our events.
 
  <span class="more"></span>
