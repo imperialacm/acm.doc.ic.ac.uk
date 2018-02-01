@@ -13,7 +13,7 @@ $_POST['g-recaptcha-response'] = "";
 
 $answer = json_decode($resp);
 
-if ($answer->success === FLASE) {
+if (!($answer->success === TRUE)) {
   $text .= "Sorry, we think you might be robot :(";
 } elseif (empty($_POST['firstname']) ||
     empty($_POST['lastname']) ||
