@@ -35,7 +35,9 @@ There are no commitments involved in becoming a member, it’s for free and supe
         <label for="input-email">Imperial email address</label>
         <input id="input-email" name="email" class="form-control" data-bv-field="email" type="email"><i style="display: none;" class="form-control-feedback" data-bv-icon-for="email"></i>
       <small style="display: none;" class="help-block" data-bv-validator="notEmpty" data-bv-for="email" data-bv-result="NOT_VALIDATED">Your email address is required and cannot be empty</small><small style="display: none;" class="help-block" data-bv-validator="emailAddress" data-bv-for="email" data-bv-result="NOT_VALIDATED">The input is not a valid email address</small><small style="display: none;" class="help-block" data-bv-validator="regexp" data-bv-for="email" data-bv-result="NOT_VALIDATED">The email must be an @imperial.ac.uk or @ic.ac.uk e-mail address</small></div>
+      <div style="margin-bottom:10px" class="g-recaptcha" data-sitekey="6LfwzEMUAAAAALNhJvTbL6FGomhJYl3xpV5l8gH8"></div>
       <button type="submit" class="btn btn-default">Submit</button>
+      <br>
     </form>
   </div>
 </div>

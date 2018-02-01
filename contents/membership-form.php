@@ -1,25 +1,42 @@
 #!/usr/bin/php
 <?php
 require './include/PHPMailerAutoload.php';
+require_once "recaptchalib.php";
 
 $text = '';
 
-if(empty($_POST['firstname']) ||
-   empty($_POST['lastname']) ||
-   empty($_POST['email'])) {
-  $text .= "All fields are required. ";
-}
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
-#$email = $_POST['email'] . '@imperial.ac.uk';
-$email = $_POST['email'];
-if (!preg_match(
-"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
-$email)) {
-  $text .= "Invalid email address. ";
+// The secret key for ``I am not robot''
+$secret = "6LfwzEMUAAAAADXnDvg5Se8tB2xrllSFK5cKKkTP";
+ 
+// empty response
+$response = null;
+
+ // check secret key
+$reCaptcha = new ReCaptcha($secret);
+
+// if submitted check response
+if ($_POST["g-recaptcha-response"]) {
+    $response = $reCaptcha->verifyResponse(
+        $_SERVER["REMOTE_ADDR"],
+        $_POST["g-recaptcha-response"]
+    );
 }
 
-if (empty($text)) {
+if (!($response != null && $response->success)) {
+  $text .= "Sorry, we think you might be robot :(";
+} elseif (empty($_POST['firstname']) ||
+    empty($_POST['lastname']) ||
+    empty($_POST['email'])) {
+  $text .= "All fields are required. ";
+} elseif (!preg_match(
+                "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
+                $_POST['email'])) {
+  $text .= "Invalid email address. ";
+} else {
+  $firstname = $_POST['firstname'];
+  $lastname = $_POST['lastname'];
+  #$email = $_POST['email'] . '@imperial.ac.uk';
+  $email = $_POST['email'];
   $mail_new_member = new PHPMailer;
   $mail_new_member->isSMTP();
   $mail_new_member->Host = 'automail.cc.ic.ac.uk';
@@ -27,7 +44,7 @@ if (empty($text)) {
   $mail_new_member->addAddress($email, $firstname . ' ' . $lastname);
   $mail_new_member->Subject = "Subscribe and Become a Member of IC-ACM Student Chapter.";
   $mail_new_member->isHTML(true);
-  $mail_new_member->Body    = 
+  $mail_new_member->Body = 
     "<p>Hi, $firstname $lastname</p>".
     "<p>Thanks for subscribing us and you are a member of Imperial College London ACM Student Chapter now. You can always find more information in our website <a href=\"http://acm.doc.ic.ac.uk/\">http://acm.doc.ic.ac.uk</a></p>".
     "<p>Imperial College London ACM Student Chapter Team</p>";
@@ -36,30 +53,28 @@ if (empty($text)) {
     $text .= "Please double check. :)";
     $text .= $mail_acm->ErrorInfo;
     exit;
+  } else {
+    $mail_acm = new PHPMailer;
+
+    $mail_acm->isSMTP();
+    $mail_acm->Host = 'automail.cc.ic.ac.uk';
+    $mail_acm->From = 'noreply@imperial.ac.uk';
+    $mail_acm->addAddress('acm@imperial.ac.uk');
+    $mail_acm->addReplyTo($email, $firstname . ' ' . $lastname);
+    $mail_acm->Subject = "Membership Request ($firstname $lastname)";
+    $mail_acm->Body    = 
+      "First Name: $firstname\n".
+      "Last Name: $lastname\n".
+      "Email: $email\n";
+
+    if (!$mail_acm->send()) {
+      $text .= "Message could not be sent. ";
+      $text .= "Mailer Error: ";
+      $text .= $mail_acm->ErrorInfo;
+      exit;
+    }
+    $text .= "Message has been sent.";
   }
-}
-
-if (empty($text)) {
-  $mail_acm = new PHPMailer;
-
-  $mail_acm->isSMTP();
-  $mail_acm->Host = 'automail.cc.ic.ac.uk';
-  $mail_acm->From = 'noreply@imperial.ac.uk';
-  $mail_acm->addAddress('acm@imperial.ac.uk');
-  $mail_acm->addReplyTo($email, $firstname . ' ' . $lastname);
-  $mail_acm->Subject = "Membership Request ($firstname $lastname)";
-  $mail_acm->Body    = 
-    "First Name: $firstname\n".
-    "Last Name: $lastname\n".
-    "Email: $email\n";
-
-  if (!$mail_acm->send()) {
-    $text .= "Message could not be sent. ";
-    $text .= "Mailer Error: ";
-    $text .= $mail_acm->ErrorInfo;
-    exit;
-  }
-  $text .= "Message has been sent.";
 }
 ?>
 <!DOCTYPE html>
