@@ -1,28 +1,17 @@
 #!/usr/bin/php
 <?php
 require './include/PHPMailerAutoload.php';
-require_once "recaptchalib.php";
 
 $text = '';
 
 // The secret key for ``I am not robot''
-$secret = "6LfwzEMUAAAAADXnDvg5Se8tB2xrllSFK5cKKkTP";
- 
-// empty response
-$response = null;
+$secret_key = "6LfwzEMUAAAAADXnDvg5Se8tB2xrllSFK5cKKkTP";
 
- // check secret key
-$reCaptcha = new ReCaptcha($secret);
+$resp = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secret_key."&response=".$_POST['g-recaptcha-response']."&remoteip=".$_SERVER['REMOTE_ADDR']);
 
-// if submitted check response
-if ($_POST["g-recaptcha-response"]) {
-    $response = $reCaptcha->verifyResponse(
-        $_SERVER["REMOTE_ADDR"],
-        $_POST["g-recaptcha-response"]
-    );
-}
+$answer = json_decode($resp);
 
-if (!($response != null && $response->success)) {
+if ($answer->success === FLASE) {
   $text .= "Sorry, we think you might be robot :(";
 } elseif (empty($_POST['firstname']) ||
     empty($_POST['lastname']) ||
