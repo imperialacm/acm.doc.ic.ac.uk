@@ -7,7 +7,9 @@ $text = '';
 // The secret key for ``I am not robot''
 $secret_key = "6LfwzEMUAAAAADXnDvg5Se8tB2xrllSFK5cKKkTP";
 
-$resp = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secret_key."&response=".$_POST['g-recaptcha-response']."&remoteip=".$_SERVER['REMOTE_ADDR']);
+$resp = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secret_key."&response=".$_POST['g-recaptcha-response']);
+
+$_POST['g-recaptcha-response'] = "";
 
 $answer = json_decode($resp);
 
